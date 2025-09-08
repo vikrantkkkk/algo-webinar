@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full flex items-center justify-center text-white px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 md:pt-40 md:pb-20 bg-[#010611]"
+      className="relative w-full flex items-center justify-center text-white px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 md:pt-36 md:pb-20 bg-[#010611]"
     >
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0 p-4">
@@ -117,8 +117,9 @@ const Hero = () => {
                 </div>
               </div>
             </AnimateFromInside>
-
-            <CTAButton />
+            <AnimateFromInside>
+              <CTAButton />
+            </AnimateFromInside>
           </div>
 
           {/* Right Side - Video Image */}

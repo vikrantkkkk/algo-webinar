@@ -9,7 +9,7 @@ import seven from "../assets/svg/7.svg";
 import eight from "../assets/svg/8.svg";
 import staricon from "../assets/svg/staricon.svg";
 
-const LogoMarquee = () => {
+const CompantLogoMarquee = () => {
   const logos = [
     { icon: cnbcdark, name: "cnbc" },
     { icon: tedx, name: "tedx" },
@@ -27,16 +27,9 @@ const LogoMarquee = () => {
     <div className="bg-[#010611] text-white flex flex-col items-center md:px-40 pt-16 gap-6 w-full">
       <div className="flex flex-col md:gap-5 gap-2 justify-center items-center w-screen md:py-5 py-2">
         <AnimateFromInside>
-          <p className="flex items-center gap-2 font-medium text-[24px] leading-6">
-            Powerful AI{" "}
-            <span>
-              <img
-                src={staricon}
-                alt={staricon}
-                className="object-cover h-[30px]"
-              />
-            </span>{" "}
-            Tools To Supercharge Your Wealth Creation
+          <p className="flex items-center gap-2 font-normal text-[16px] leading-6">
+            Trusted by <span className="font-semibold">Professionals</span>{" "}
+            Working At Top Companies Like
           </p>
         </AnimateFromInside>
         <div className="overflow-hidden group z-20 w-screen">
@@ -62,4 +55,4 @@ const LogoMarquee = () => {
   );
 };
 
-export default LogoMarquee;
+export default CompantLogoMarquee;

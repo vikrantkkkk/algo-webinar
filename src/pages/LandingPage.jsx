@@ -6,6 +6,7 @@ import StrykeXAdvantage from "../components/StrykeXAdvantage.jsx";
 import Works from "../components/Works.jsx";
 import Faq from "../components/Faq.jsx";
 import LightningFast from "../components/LightningFast.jsx";
+import ThreeMInutesVideo from "../components/ThreeMInutesVideo.jsx";
 
 const LandingPage = () => {
   return (
@@ -15,6 +16,9 @@ const LandingPage = () => {
       </div>
       <div>
         <LogoMarquee />
+      </div>
+      <div>
+        <ThreeMInutesVideo />
       </div>
       <div>
         <StrykeXAdvantage />
