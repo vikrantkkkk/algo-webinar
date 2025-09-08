@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import MainLayout from "../layouts/MainLayout.jsx";
 import Hero from "../components/Hero.jsx";
-import ExclusiveFeatures from "../components/ExclusiveFeatures.jsx";
+import LogoMarquee from "../components/LogoMarquee.jsx";
 import StrykeXAdvantage from "../components/StrykeXAdvantage.jsx";
 import Works from "../components/Works.jsx";
 import Faq from "../components/Faq.jsx";
@@ -14,7 +14,7 @@ const LandingPage = () => {
         <Hero />
       </div>
       <div>
-        <ExclusiveFeatures />
+        <LogoMarquee />
       </div>
       <div>
         <StrykeXAdvantage />
