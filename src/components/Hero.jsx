@@ -1,5 +1,6 @@
 import React from "react";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
+import CTAButton from "../common/CTAButton";
 import background from "../assets/webp/background.webp";
 import video from "../assets/webp/video2.webp";
 import staricon from "../assets/svg/staricon.svg";
@@ -117,65 +118,7 @@ const Hero = () => {
               </div>
             </AnimateFromInside>
 
-            {/* CTA Buttons */}
-            <AnimateFromInside>
-              <div className="flex flex-col md:flex-row items-start gap-8 mt-8">
-                <div className="relative">
-                  {/* Top-left glow */}
-                  <div
-                    className="absolute -top-0 -left-1 w-[90%] h-[40px] rounded-full blur-[15px]"
-                    style={{
-                      background: "rgba(76, 115, 255, 0.73)",
-                      backdropFilter: "blur(21.669902801513672px)",
-                    }}
-                  ></div>
-                  {/* Bottom-right glow */}
-                  <div
-                    className="absolute -bottom-0 -right-1 w-[90%] h-[40px] rounded-full blur-[15px]"
-                    style={{
-                      background:
-                        "linear-gradient(272.87deg, rgba(76, 115, 255, 0.73) 4.62%, rgba(0, 162, 183, 0.73) 95.32%)",
-                      backdropFilter: "blur(8px)",
-                    }}
-                  ></div>
-                  <button
-                    onClick={() => {}}
-                    className="relative bg-white text-black text-[16px] font-semibold rounded-full py-4 px-8 flex items-center gap-2 transition-all"
-                  >
-                    Join Now (Hindi) - Free{" "}
-                    <span className="line-through">₹490</span>
-                    <span>→</span>
-                  </button>
-                </div>
-                <div className="relative">
-                  {/* Top-left glow */}
-                  <div
-                    className="absolute -top-0 -left-1 w-[90%] h-[40px] rounded-full blur-[15px]"
-                    style={{
-                      background: "rgba(76, 115, 255, 0.73)",
-                      backdropFilter: "blur(21.669902801513672px)",
-                    }}
-                  ></div>
-                  {/* Bottom-right glow */}
-                  <div
-                    className="absolute -bottom-0 -right-1 w-[90%] h-[40px] rounded-full blur-[15px]"
-                    style={{
-                      background:
-                        "linear-gradient(272.87deg, rgba(76, 115, 255, 0.73) 4.62%, rgba(0, 162, 183, 0.73) 95.32%)",
-                      backdropFilter: "blur(8px)",
-                    }}
-                  ></div>
-                  <button
-                    onClick={() => {}}
-                    className="relative bg-black border-[1px] border-[#FFFFFF] text-white text-[16px] font-semibold rounded-full py-4 px-8 flex items-center gap-2 transition-all"
-                  >
-                    Join Now (English) - Free{" "}
-                    <span className="line-through">₹490</span>
-                    <span>→</span>
-                  </button>
-                </div>
-              </div>
-            </AnimateFromInside>
+            <CTAButton />
           </div>
 
           {/* Right Side - Video Image */}
