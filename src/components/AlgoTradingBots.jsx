@@ -1,5 +1,6 @@
 import React from "react";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
+import CTAButton from "../common/CTAButton";
 
 const AlgoTradingBots = () => {
   const tradingBots = [
@@ -121,7 +122,7 @@ const AlgoTradingBots = () => {
   );
 
   return (
-    <div className="bg-[#010611] text-white flex flex-col gap-10 justify-center md:px-40 px-4 pt-20 pb-12 w-full">
+    <div className="bg-[#010611] text-white flex flex-col gap-6 justify-center md:px-40 px-4 pt-20 pb-12 w-full">
       {/* Heading */}
       <div className="flex flex-col items-start w-full gap-3">
         <AnimateFromInside>
@@ -156,6 +157,14 @@ const AlgoTradingBots = () => {
           ))}
         </div>
       </div>
+      <div className="flex justify-center items-center">
+        <AnimateFromInside>
+          <CTAButton />
+        </AnimateFromInside>
+      </div>
+      <p className="font-medium text-center text-[16px] leading-[30px] mt-9">
+        Register today and unlock all the below mentioned bonuses worth ₹ 25,499
+      </p>
     </div>
   );
 };
