@@ -2,6 +2,10 @@ import React from "react";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
 import background from "../assets/webp/background.webp";
 import video from "../assets/webp/video2.webp";
+import staricon from "../assets/svg/staricon.svg";
+import autopiloticon from "../assets/svg/autopiloticon.svg";
+import autuomatictradingicon from "../assets/svg/autuomatictradingicon.svg";
+import begineerfriendly from "../assets/svg/begineerfriendly.svg";
 
 const Hero = () => {
   return (
@@ -19,7 +23,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 mx-auto w-full">
+      <div className="relative z-10 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left Side - Text Content */}
           <div className="flex-1 flex flex-col justify-center items-start gap-6">
@@ -33,7 +37,7 @@ const Hero = () => {
                   }}
                 >
                   <span
-                    className="font-bold text-[18px] leading-[100%] flex items-center gap-2 text-white text-[14px] leading-[100%] px-4 py-2 rounded-full"
+                    className="font-bold leading-[100%] flex items-center gap-2 text-white text-[18px]  px-4 py-2 rounded-full"
                     style={{
                       background:
                         "linear-gradient(101.35deg, #000000 1.29%, #FF3C3C 140.52%)",
@@ -44,26 +48,33 @@ const Hero = () => {
                   </span>
                 </div>
 
-                <p className="font-bold text-[15px] leading-6 font-normal">
+                <p className="text-[18px] leading-6 font-normal">
                   90 Mins Webinar on A.I Powered Algo Trading
                 </p>
               </div>
             </AnimateFromInside>
 
             <AnimateFromInside>
-              <h1 className="font-semibold text-[32px] md:text-[48px] lg:text-[64px] leading-[120%] text-left font-degular">
+              <h1 className="font-normal text-[76px] leading-[100%] text-left font-degular">
                 Learn How To Trade
+                <span
+                  className="bg-gradient-to-r from-[#007AFF] to-[#81F0FF] bg-clip-text text-transparent flex items-center gap-1"
+                  style={{
+                    background:
+                      "linear-gradient(91.62deg, #007AFF -44.13%, #81F0FF 120.92%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  <img src={staricon} alt={staricon} className="object-cover" />{" "}
+                  AI Powered
+                </span>{" "}
+                Algo Trading Tools
               </h1>
             </AnimateFromInside>
 
             <AnimateFromInside>
-              <h2 className="font-semibold text-[32px] md:text-[48px] lg:text-[64px] leading-[120%] text-left font-degular">
-                ✨ AI Powered Algo Trading Tools
-              </h2>
-            </AnimateFromInside>
-
-            <AnimateFromInside>
-              <p className="font-medium text-[16px] md:text-[20px] leading-[30px] text-[#FFFFFFBF] text-left max-w-2xl">
+              <p className="font-normal text-[18px] md:text-[165%] text-[#FFFFFF] text-left">
                 The age of AI is here, and professional traders are going all
                 in. The biggest trading revolution is here.
               </p>
@@ -71,73 +82,108 @@ const Hero = () => {
 
             {/* Feature Cards */}
             <AnimateFromInside>
-              <div className="flex flex-col md:flex-row items-start gap-4">
-                <div className="flex items-center gap-2 bg-[#18181B] rounded-full px-4 py-2">
-                  <span className="text-2xl">🤖</span>
-                  <span className="text-sm font-medium">
-                    Trade On Autopilot
+              <div className="flex flex-col md:flex-row items-start gap-6 mt-2">
+                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[215px]">
+                  <img
+                    src={autopiloticon}
+                    alt={autopiloticon}
+                    className="object-cover"
+                  />
+                  <span className="font-medium text-[20px] leading-[25px]">
+                    Trade On <br/> Autopilot
                   </span>
                 </div>
-                <div className="flex items-center gap-2 bg-[#18181B] rounded-full px-4 py-2">
-                  <span className="text-2xl">📈</span>
-                  <span className="text-sm font-medium">
-                    Fully Automatic Trading
+                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
+                  <img
+                    src={autuomatictradingicon}
+                    alt={autuomatictradingicon}
+                    className="object-cover"
+                  />
+                  <span className="font-medium text-[20px] leading-[25px]">
+                    Fully Automatic <br/> Trading
                   </span>
                 </div>
-                <div className="flex items-center gap-2 bg-[#18181B] rounded-full px-4 py-2">
-                  <span className="text-2xl">👤</span>
-                  <span className="text-sm font-medium">Beginner Friendly</span>
+                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[215px]">
+                  <img
+                    src={begineerfriendly}
+                    alt={begineerfriendly}
+                    className="object-cover"
+                  />
+                  <span className="font-medium text-[20px] leading-[25px]">Beginner <br/>Friendly</span>
                 </div>
               </div>
             </AnimateFromInside>
 
             {/* CTA Buttons */}
             <AnimateFromInside>
-              <div className="flex flex-col md:flex-row items-start gap-4">
-                <button
-                  onClick={() => {}}
-                  className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-[16px] font-semibold rounded-full py-4 px-8 flex items-center gap-2 hover:from-blue-600 hover:to-purple-700 transition-all"
-                >
-                  Join Now (Hindi) - Free{" "}
-                  <span className="line-through">₹490</span>
-                  <span>→</span>
-                </button>
-                <button
-                  onClick={() => {}}
-                  className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-[16px] font-semibold rounded-full py-4 px-8 flex items-center gap-2 hover:from-blue-600 hover:to-purple-700 transition-all"
-                >
-                  Join Now (English) - Free{" "}
-                  <span className="line-through">₹490</span>
-                  <span>→</span>
-                </button>
+              <div className="flex flex-col md:flex-row items-start gap-8 mt-8">
+                <div className="relative">
+                  {/* Top-left glow */}
+                  <div
+                    className="absolute -top-0 -left-1 w-[90%] h-[40px] rounded-full blur-[15px]"
+                    style={{
+                      background: "rgba(76, 115, 255, 0.73)",
+                      backdropFilter: "blur(21.669902801513672px)",
+                    }}
+                  ></div>
+                  {/* Bottom-right glow */}
+                  <div
+                    className="absolute -bottom-0 -right-1 w-[90%] h-[40px] rounded-full blur-[15px]"
+                    style={{
+                      background:
+                        "linear-gradient(272.87deg, rgba(76, 115, 255, 0.73) 4.62%, rgba(0, 162, 183, 0.73) 95.32%)",
+                      backdropFilter: "blur(8px)",
+                    }}
+                  ></div>
+                  <button
+                    onClick={() => {}}
+                    className="relative bg-white text-black text-[16px] font-semibold rounded-full py-4 px-8 flex items-center gap-2 transition-all"
+                  >
+                    Join Now (Hindi) - Free{" "}
+                    <span className="line-through">₹490</span>
+                    <span>→</span>
+                  </button>
+                </div>
+                <div className="relative">
+                  {/* Top-left glow */}
+                  <div
+                    className="absolute -top-0 -left-1 w-[90%] h-[40px] rounded-full blur-[15px]"
+                    style={{
+                      background: "rgba(76, 115, 255, 0.73)",
+                      backdropFilter: "blur(21.669902801513672px)",
+                    }}
+                  ></div>
+                  {/* Bottom-right glow */}
+                  <div
+                    className="absolute -bottom-0 -right-1 w-[90%] h-[40px] rounded-full blur-[15px]"
+                    style={{
+                      background:
+                        "linear-gradient(272.87deg, rgba(76, 115, 255, 0.73) 4.62%, rgba(0, 162, 183, 0.73) 95.32%)",
+                      backdropFilter: "blur(8px)",
+                    }}
+                  ></div>
+                  <button
+                    onClick={() => {}}
+                    className="relative bg-black border-[1px] border-[#FFFFFF] text-white text-[16px] font-semibold rounded-full py-4 px-8 flex items-center gap-2 transition-all"
+                  >
+                    Join Now (English) - Free{" "}
+                    <span className="line-through">₹490</span>
+                    <span>→</span>
+                  </button>
+                </div>
               </div>
-            </AnimateFromInside>
-
-            <AnimateFromInside>
-              <p className="text-[12px] text-[#FFFFFF80]">
-                (Limited Seats Only)
-              </p>
             </AnimateFromInside>
           </div>
 
           {/* Right Side - Video Image */}
           <div className="flex-1 flex justify-center lg:justify-end">
             <AnimateFromInside>
-              <div className="relative max-w-lg w-full">
-                <div className="aspect-[16/10] overflow-hidden rounded-xl relative">
-                  <div
-                    className="absolute inset-0 pointer-events-none"
-                    style={{
-                      background:
-                        "linear-gradient(180deg, rgba(0, 0, 0, 0) 50.07%, #01041A 95.16%)",
-                    }}
-                  />
-                  <img
-                    src={video}
-                    alt="Video preview"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              <div className="relative left-64 w-full">
+                <img
+                  src={video}
+                  alt="Video preview"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </AnimateFromInside>
           </div>

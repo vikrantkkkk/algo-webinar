@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import mainlogo from "../assets/svg/mainlogo.svg";
-import whatsappIcon from "../assets/svg/whatsapp1.svg";
+import whatsappIcon from "../assets/svg/whatsappiconnew.svg";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const HEADER_HEIGHT = 80;
@@ -42,7 +42,7 @@ const Header = () => {
       window.scrollTo({
         top: section.offsetTop - HEADER_HEIGHT,
         behavior: "smooth",
-      }); 
+      });
     }
   };
 
@@ -77,7 +77,7 @@ const Header = () => {
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:flex hidden gap-10 items-center">
             {NAV_ITEMS.map((item) => {
               const id = getIdFromLabel(item);
-              const isActive = activeId === id && location.pathname === "/"; 
+              const isActive = activeId === id && location.pathname === "/";
               return (
                 <button
                   key={id}
@@ -98,13 +98,13 @@ const Header = () => {
           <div className="md:flex hidden gap-3 items-center z-10">
             <button
               onClick={() => {}}
-              className="border border-white/60 text-white p-3 rounded-lg hover:bg-white/10 transition"
+              className="border border-[#FFFFFF57] text-white p-3 rounded-[11px] hover:bg-white/10 transition"
             >
-              <img src={whatsappIcon} alt="WhatsApp" className="w-5 h-5" />
+              <img src={whatsappIcon} alt="WhatsApp" className="object-cover" />
             </button>
             <button
               onClick={() => navigate("/signin")}
-              className="border border-white/60 text-white text-[14px] font-medium px-4 py-3 rounded-lg hover:bg-white hover:text-black transition"
+              className="border border-[#FFFFFF57] text-white text-[14px] font-medium py-3 px-8 rounded-[11px] hover:bg-white hover:text-black transition"
             >
               Sign Up
             </button>

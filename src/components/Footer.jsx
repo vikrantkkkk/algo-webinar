@@ -14,7 +14,6 @@ import linkedin from "../assets/svg/linkedin.svg";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
 import light4 from "../assets/webp/footerlight.webp";
 import lightdesktop from "../assets/webp/pricelight.webp";
-import WatiWidget from "../components/WatiWidget";
 
 const Footer = () => {
   const [isIphone, setIsIphone] = useState(false);
@@ -472,7 +471,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <WatiWidget />
     </footer>
   );
 };
