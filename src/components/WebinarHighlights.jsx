@@ -1,6 +1,5 @@
 import React from "react";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
-import GradientButton from "../common/GradientButton";
 import card7 from "../assets/webp/card7.webp";
 import card8 from "../assets/webp/card8.webp";
 import card9 from "../assets/webp/card9.webp";
@@ -8,11 +7,10 @@ import camera from "../assets/svg/camera.svg";
 import course from "../assets/svg/course.svg";
 import live from "../assets/svg/live.svg";
 import CTAButton from "../common/CTAButton";
-import CompantLogoMarquee from "./CompantLogoMarquee";
 
 const WebinarHighlights = () => {
   return (
-    <div className="bg-[#010611] text-white flex flex-col gap-6 justify-center md:px-40 px-4 pt-20 w-full">
+    <div className="bg-[#010611] text-white flex flex-col gap-6 justify-center md:px-40 px-4 pt-20 pb-8 w-full">
       <div className="flex flex-col items-start w-full">
         <AnimateFromInside>
           <p className="font-normal md:text-[64px]  text-[40px] leading-[74px]  font-degular">
@@ -143,7 +141,6 @@ const WebinarHighlights = () => {
             <CTAButton />
           </div>
         </AnimateFromInside>
-        <CompantLogoMarquee />
       </div>
     </div>
   );

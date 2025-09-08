@@ -6,6 +6,7 @@ import WebinarHighlights from "../components/WebinarHighlights.jsx";
 import AlgoTradingBots from "../components/AlgoTradingBots.jsx";
 import Faq from "../components/Faq.jsx";
 import ThreeMInutesVideo from "../components/ThreeMInutesVideo.jsx";
+import CompantLogoMarquee from "../components/CompantLogoMarquee.jsx";
 
 const LandingPage = () => {
   return (
@@ -21,6 +22,9 @@ const LandingPage = () => {
       </div>
       <div>
         <WebinarHighlights />
+      </div>
+      <div>
+        <CompantLogoMarquee />
       </div>
       <div>
         <AlgoTradingBots />

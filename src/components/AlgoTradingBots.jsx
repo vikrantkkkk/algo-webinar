@@ -69,7 +69,7 @@ const AlgoTradingBots = () => {
             <span className="font-semibold text-[#4ADE80]">{highlight}</span>
             {parts[1]}
           </p>
-        );
+        ); 
       } else {
         return (
           <p key={index} className="text-[#C8D0E2] text-sm leading-relaxed">
