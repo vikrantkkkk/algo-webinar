@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full flex items-center justify-center text-white px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-20 md:py-32 bg-[#010611]"
+      className="relative w-full flex items-center justify-center text-white px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 md:pt-40 md:pb-16 bg-[#010611]"
     >
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0 p-4">
@@ -90,7 +90,7 @@ const Hero = () => {
                     className="object-cover"
                   />
                   <span className="font-medium text-[20px] leading-[25px]">
-                    Trade On <br/> Autopilot
+                    Trade On <br /> Autopilot
                   </span>
                 </div>
                 <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
@@ -100,7 +100,7 @@ const Hero = () => {
                     className="object-cover"
                   />
                   <span className="font-medium text-[20px] leading-[25px]">
-                    Fully Automatic <br/> Trading
+                    Fully Automatic <br /> Trading
                   </span>
                 </div>
                 <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[215px]">
@@ -109,7 +109,10 @@ const Hero = () => {
                     alt={begineerfriendly}
                     className="object-cover"
                   />
-                  <span className="font-medium text-[20px] leading-[25px]">Beginner <br/>Friendly</span>
+                  <span className="font-medium text-[20px] leading-[25px]">
+                    Beginner <br />
+                    Friendly
+                  </span>
                 </div>
               </div>
             </AnimateFromInside>
