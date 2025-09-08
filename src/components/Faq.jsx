@@ -4,26 +4,38 @@ import arrow from "../assets/svg/arrow1.svg";
 const faqData = [
   {
     id: 1,
-    question: "Is this webinar beginner-friendly?",
+    question: "Is Stockwiz a Free To stockmarket Generator?",
     answer:
-      "Yes! Whether you’re a complete beginner, new to trading, or have some experience, the concepts will be explained in a clear, structured, and easy-to-understand way.",
+      "We have launched a free plan that lets you create free To stockmarkets! It includes 3 minutes of video per month, 6 stock avatars and a full range of AI voices in 140+ languages. Learn more about ",
   },
   {
     id: 2,
-    question: "In which language will the webinar be conducted?",
-    answer: "The webinar will be available in both Hindi and English.",
+    question: "Can I customize AI-generated videos to add brand identity?",
+    answer: "",
   },
   {
     id: 3,
-    question: "Will the recording be provided?",
-    answer: "No, the recording will not be provided.",
+    question: "Does To stockmarket creation integrate with existing LMS?",
+    answer: "",
   },
+
   {
     id: 4,
-    question: "How can I connect with the Stockwiz support team?",
-    answer: `You can reach out to us via:<br/>
-      ✉️ Email: <a href="mailto:help@stockwiz.in" class="text-blue-600 underline">help@stockwiz.in</a><br/>
-      📞 Phone: +916350670245`,
+    question: "How does To stockmarket creation improve employee productivity?",
+    answer: "",
+  },
+
+  {
+    id: 5,
+    question:
+      "Is it safe for businesses to create To stockmarkets in Stockwiz?",
+    answer: "",
+  },
+
+  {
+    id: 6,
+    question: "What can you do with Stockwiz's To stockmarket generator?",
+    answer: "",
   },
 ];
 
@@ -35,7 +47,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="flex items-center justify-between bg-[#010611] w-full h-auto md:pt-8 md:pb-16 px-4 md:px-80">
+    <div className="flex items-center justify-between bg-[#010611] w-full h-auto pt-20 pb-12 px-4 md:px-80">
       <div className="flex flex-col md:flex-row  w-full mx-auto">
         <div className="md:w-[40%] w-full flex md:justify-start justify-center md:items-start items-center flex-col md:mt-4 text-center md:text-left">
           <h2 className="font-semibold  md:text-[48px] text-[32px] leading-[42px] md:leading-[62px] text-white">
@@ -49,7 +61,7 @@ const Faq = () => {
               <div
                 onClick={() => toggleFAQ(index)}
                 key={item.id}
-                className={`w-full cursor-pointer md:max-w-[750px] rounded-[16px] p-6 bg-[#FFFFFF1F] text-white transition-all duration-300 ease-in-out h-auto flex ${
+                className={`w-full cursor-pointer md:max-w-[750px] rounded-[16px] px-6 py-8 bg-[#FFFFFF1F] text-white transition-all duration-300 ease-in-out h-auto flex ${
                   activeIndex === index ? "items-start" : "items-center"
                 }`}
               >

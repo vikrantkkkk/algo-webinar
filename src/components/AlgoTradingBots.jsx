@@ -69,7 +69,7 @@ const AlgoTradingBots = () => {
             <span className="font-semibold text-[#4ADE80]">{highlight}</span>
             {parts[1]}
           </p>
-        ); 
+        );
       } else {
         return (
           <p key={index} className="text-[#C8D0E2] text-sm leading-relaxed">
@@ -80,10 +80,50 @@ const AlgoTradingBots = () => {
     });
   };
 
+  const Card = ({ bot }) => (
+    <div className="flex flex-col justify-start items-start bg-[#FFFFFF0D] border border-[#1C2230] rounded-[14px] p-6 transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 flex-1 min-w-[300px] max-w-[400px]">
+      {/* Image/Top Section */}
+      <div className="relative w-full h-[210px] bg-[#FFFFFF0F] rounded-[12px] mb-4">
+        <div
+          className="absolute top-0 left-0"
+          style={{
+            borderWidth: "0px 1.05px 1.05px 0px",
+            borderStyle: "solid",
+            borderImageSource:
+              "linear-gradient(141.14deg, #3FADFF 7.75%, #336CDC 49.32%, #47B4B4 91.74%)",
+            borderImageSlice: "1",
+            borderRadius: "12px 0px 12px 0px",
+          }}
+        >
+          <div
+            className="px-4 py-2 text-white font-semibold text-[18px] leading-[100%]"
+            style={{
+              background:
+                "linear-gradient(92.47deg, rgba(63, 173, 255, 0.25) 0.63%, rgba(51, 108, 220, 0.25) 48.21%, rgba(71, 180, 180, 0.25) 96.78%)",
+              borderRadius: "12px 0px 12px 0px",
+            }}
+          >
+            Fully Automated
+          </div>
+        </div>
+      </div>
+
+      {/* Title */}
+      <h3 className="text-lg font-semibold text-white mb-4 text-left">
+        {bot.title}
+      </h3>
+
+      {/* Description */}
+      <div className="flex flex-col gap-2 text-left">
+        {renderDescription(bot.description, bot.highlight)}
+      </div>
+    </div>
+  );
+
   return (
     <div className="bg-[#010611] text-white flex flex-col gap-10 justify-center md:px-40 px-4 pt-20 pb-12 w-full">
       {/* Heading */}
-      <div className="flex flex-col items-start w-full">
+      <div className="flex flex-col items-start w-full gap-3">
         <AnimateFromInside>
           <p className="font-normal md:text-[56px] text-[34px] leading-tight font-degular">
             Winning Pre Built Algo Trading Bots{" "}
@@ -92,7 +132,7 @@ const AlgoTradingBots = () => {
         </AnimateFromInside>
 
         <AnimateFromInside>
-          <p className="font-normal text-[20px] leading-[30px] pt-3 text-[#C8D0E2]">
+          <p className="font-normal text-[20px] leading-[30px] text-[#C8D0E2]">
             Get ready to blow your minds when we reveal our fully automated,
             ready to use – pre built algo <br /> trading strategies which will
             put your wealth creation journey on autopilot.
@@ -100,44 +140,21 @@ const AlgoTradingBots = () => {
         </AnimateFromInside>
       </div>
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {tradingBots.map((bot) => (
-          <div
-            key={bot.id}
-            className="bg-gradient-to-b from-[#111827] to-[#0B0F19] border border-[#1C2230] rounded-2xl p-6 transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
-          >
-            {/* Badge */}
-            <div className="flex items-center gap-2 mb-5">
-              <div className="bg-[#1A2436] border border-[#2C3E57] rounded-md px-3 py-1 flex items-center gap-2">
-                <svg
-                  className="w-4 h-4 text-blue-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="text-blue-400 text-xs font-medium tracking-wide">
-                  Fully Automated
-                </span>
-              </div>
-            </div>
+      {/* Cards Grid */}
+      <div className="flex flex-col gap-6 md:gap-8">
+        {/* Row 1 */}
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+          {tradingBots.slice(0, 3).map((bot) => (
+            <Card key={bot.id} bot={bot} />
+          ))}
+        </div>
 
-            {/* Title */}
-            <h3 className="text-lg font-semibold text-white mb-4">
-              {bot.title}
-            </h3>
-
-            {/* Description */}
-            <div className="space-y-2">
-              {renderDescription(bot.description, bot.highlight)}
-            </div>
-          </div>
-        ))}
+        {/* Row 2 */}
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+          {tradingBots.slice(3, 6).map((bot) => (
+            <Card key={bot.id} bot={bot} />
+          ))}
+        </div>
       </div>
     </div>
   );

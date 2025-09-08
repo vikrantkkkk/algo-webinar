@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <footer
-      className={`bg-[#010611] md:pb-[135px] ${
+      className={`bg-[#010611] pt-20  ${
         isIphone ? "pb-40" : "pb-32"
       } relative`}
     >
