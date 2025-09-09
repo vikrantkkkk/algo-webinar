@@ -7,95 +7,113 @@ const AlgoTradingBots = () => {
     {
       id: 1,
       title: "Decay Miner",
-      description: [
-        "- Automatically takes advantage of volatility",
-        "- Win rate of 85%+, works in index options",
-      ],
-      highlight: "85%+",
+      description: (
+        <>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Automatically takes advantage of volatility
+          </p>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Win rate of{" "}
+            <span className="font-semibold text-[#4CFE7F]">85%+</span>, works in
+            index options
+          </p>
+        </>
+      ),
     },
     {
       id: 2,
       title: "Trend Rider",
-      description: [
-        "- Automatically detects big trends and rides them",
-        "- Win rate of 70%+, works in all F&O stocks",
-      ],
-      highlight: "70%+",
+      description: (
+        <>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Automatically detects big trends and rides them
+          </p>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Win rate of{" "}
+            <span className="font-semibold text-[#4CFE7F]">70%+</span>, works in
+            all F&O stocks
+          </p>
+        </>
+      ),
     },
     {
       id: 3,
       title: "Momentum Surge",
-      description: [
-        "- Automatically scans institutional activity and executes trades",
-        "- Especially designed for Nifty & Bank Nifty Index Options",
-      ],
-      highlight: "Nifty & Bank Nifty",
+      description: (
+        <>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Automatically scans institutional activity and executes trades
+          </p>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            -{" "}
+            <span className="font-semibold text-white">
+              {" "}
+              Especially designed for Nifty{" "}
+            </span>
+            & Bank Nifty Index Options
+          </p>
+        </>
+      ),
     },
     {
       id: 4,
       title: "Breakout Blitz",
-      description: [
-        "- Pre built breakout trading bot, captures big sudden moves",
-        "- Curated for index futures such as Midcap Nifty & Fin Nifty",
-      ],
-      highlight: "Midcap Nifty & Fin Nifty",
+      description: (
+        <>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Pre built breakout trading bot, captures big sudden moves
+          </p>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Curated for index futures such as{" "}
+            <span className="font-semibold text-white">
+              Midcap Nifty & Fin Nifty
+            </span>
+          </p>
+        </>
+      ),
     },
     {
       id: 5,
       title: "The Big Bull",
-      description: [
-        "- Fundamental analyst + professional technical trading bot",
-        "- Spots undervalued stocks, buys low, sells high & repeat",
-      ],
-      highlight: "Fundamental analyst + professional technical trading bot",
+      description: (
+        <>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            -{" "}
+            <span className="font-semibold text-white">
+              Fundamental analyst + professional technical trading bot
+            </span>
+          </p>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Spots undervalued stocks, buys low, sells high & repeat
+          </p>
+        </>
+      ),
     },
     {
       id: 6,
       title: "Trend Inverter",
-      description: [
-        "- Contra trading bot - designed to take reversal trades",
-        "- Works in all market segments - intraday and swing",
-      ],
-      highlight: "Works in all market segments",
+      description: (
+        <>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            - Contra trading bot - designed to take reversal trades
+          </p>
+          <p className="text-[#FFFFFFBF] text-[18px] leading-[26px] font-normal">
+            -{" "}
+            <span className="font-semibold text-white">
+              Works in all market segments
+            </span>{" "}
+            - intraday and swing
+          </p>
+        </>
+      ),
     },
   ];
 
-  const renderDescription = (description, highlight) => {
-    return description.map((line, index) => {
-      if (line.includes(highlight)) {
-        const parts = line.split(highlight);
-        return (
-          <p key={index} className="text-[#C8D0E2] text-sm leading-relaxed">
-            {parts[0]}
-            <span className="font-semibold text-[#4ADE80]">{highlight}</span>
-            {parts[1]}
-          </p>
-        );
-      } else {
-        return (
-          <p key={index} className="text-[#C8D0E2] text-sm leading-relaxed">
-            {line}
-          </p>
-        );
-      }
-    });
-  };
-
   const Card = ({ bot }) => (
-    <div className="flex flex-col justify-start items-start bg-[#FFFFFF0D] border border-[#1C2230] rounded-[14px] p-6 transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 flex-1 min-w-[300px] max-w-[400px]">
+    <div className="flex flex-col justify-start items-start bg-[#FFFFFF0D] border border-[#1C2230] rounded-[14px] p-6 transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 flex-1">
       {/* Image/Top Section */}
       <div className="relative w-full h-[210px] bg-[#FFFFFF0F] rounded-[12px] mb-4">
-        <div
-          className="absolute top-0 left-0"
-          style={{
-            borderWidth: "0px 1.05px 1.05px 0px",
-            borderStyle: "solid",
-            borderImageSource:
-              "linear-gradient(141.14deg, #3FADFF 7.75%, #336CDC 49.32%, #47B4B4 91.74%)",
-            borderImageSlice: "1",
-            borderRadius: "12px 0px 12px 0px",
-          }}
-        >
+        <div className="absolute top-0 left-0 border border-[#336CDC] rounded-br-[12px] rounded-tl-[12px]">
           <div
             className="px-4 py-2 text-white font-semibold text-[18px] leading-[100%]"
             style={{
@@ -110,14 +128,12 @@ const AlgoTradingBots = () => {
       </div>
 
       {/* Title */}
-      <h3 className="text-lg font-semibold text-white mb-4 text-left">
+      <h3 className="text-[32px] leading-[100%] font-semibold text-white mb-4 text-left">
         {bot.title}
       </h3>
 
       {/* Description */}
-      <div className="flex flex-col gap-2 text-left">
-        {renderDescription(bot.description, bot.highlight)}
-      </div>
+      <div className="flex flex-col gap-2 text-left">{bot.description}</div>
     </div>
   );
 
@@ -144,14 +160,14 @@ const AlgoTradingBots = () => {
       {/* Cards Grid */}
       <div className="flex flex-col gap-6 md:gap-8">
         {/* Row 1 */}
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+        <div className="flex gap-6 md:gap-8">
           {tradingBots.slice(0, 3).map((bot) => (
             <Card key={bot.id} bot={bot} />
           ))}
         </div>
 
         {/* Row 2 */}
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+        <div className="flex gap-6 md:gap-8">
           {tradingBots.slice(3, 6).map((bot) => (
             <Card key={bot.id} bot={bot} />
           ))}
