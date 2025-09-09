@@ -122,7 +122,7 @@ const AlgoTradingBots = () => {
   );
 
   return (
-    <div className="bg-[#010611] text-white flex flex-col gap-6 justify-center md:px-40 px-4 pt-20 pb-12 w-full">
+    <div className="bg-[#010611] text-white flex flex-col gap-6 justify-center md:px-40 px-4 pt-20 pb-8 w-full">
       {/* Heading */}
       <div className="flex flex-col items-start w-full gap-3">
         <AnimateFromInside>

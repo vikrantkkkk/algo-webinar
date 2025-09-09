@@ -47,7 +47,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="flex items-center justify-between bg-[#010611] w-full h-auto pt-20 pb-12 px-4 md:px-80">
+    <div className="flex items-center justify-between bg-[#010611] w-full h-auto pt-28 pb-8 px-4 md:px-80">
       <div className="flex flex-col md:flex-row  w-full mx-auto">
         <div className="md:w-[40%] w-full flex md:justify-start justify-center md:items-start items-center flex-col md:mt-4 text-center md:text-left">
           <h2 className="font-semibold  md:text-[48px] text-[32px] leading-[42px] md:leading-[62px] text-white">
