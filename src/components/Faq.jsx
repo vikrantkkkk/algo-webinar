@@ -1,41 +1,33 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import arrow from "../assets/svg/arrow1.svg";
 
 const faqData = [
   {
     id: 1,
-    question: "Is Stockwiz a Free To stockmarket Generator?",
+    question: "Do I need coding skills to use StrykeX?",
     answer:
-      "We have launched a free plan that lets you create free To stockmarkets! It includes 3 minutes of video per month, 6 stock avatars and a full range of AI voices in 140+ languages. Learn more about ",
+      "❌ Not at all! StrykeX is a no-code platform. You can build, backtest, and automate strategies in just a few clicks. Everything runs automatically—no coding required.",
   },
   {
     id: 2,
-    question: "Can I customize AI-generated videos to add brand identity?",
-    answer: "",
+    question: "Who should attend this webinar?",
+    answer: "This webinar is for beginners, retail traders, busy professionals, and even experienced investors who want to trade smarter using AI and automation.",
   },
   {
     id: 3,
-    question: "Does To stockmarket creation integrate with existing LMS?",
-    answer: "",
+    question: "Will I learn practical strategies or just theory?",
+    answer: "This is a hands-on, practical session. You'll see real strategies, live examples, and pre-built bots that you can start using right away.",
   },
-
   {
     id: 4,
-    question: "How does To stockmarket creation improve employee productivity?",
-    answer: "",
+    question: "How do I join the webinar after registering?",
+    answer: "Once you register, you'll get a confirmation email + WhatsApp/SMS reminder with the Zoom link and joining instructions.",
   },
-
   {
     id: 5,
-    question:
-      "Is it safe for businesses to create To stockmarkets in Stockwiz?",
-    answer: "",
-  },
-
-  {
-    id: 6,
-    question: "What can you do with Stockwiz's To stockmarket generator?",
-    answer: "",
+    question: "How can I connect with the Stockwiz support team?",
+    answer: "You can reach out to us via:<br/>✉️ Email: help@stockwiz.in<br/>📞 Phone: +91 6350670245",
   },
 ];
 
@@ -58,51 +50,66 @@ const Faq = () => {
         <div className="flex-1 mt-6 md:mt-0">
           <div className="flex flex-col w-full space-y-4">
             {faqData.map((item, index) => (
-              <div
+              <motion.div
                 onClick={() => toggleFAQ(index)}
                 key={item.id}
-                className={`w-full cursor-pointer md:max-w-[750px] rounded-[16px] px-6 py-8 bg-[#FFFFFF1F] text-white transition-all duration-300 ease-in-out h-auto flex ${
+                className={`w-full cursor-pointer md:max-w-[750px] rounded-[16px] px-6 py-8 bg-[#FFFFFF1F] text-white h-auto flex ${
                   activeIndex === index ? "items-start" : "items-center"
                 }`}
+                initial={false}
+                animate={{
+                  backgroundColor: activeIndex === index ? "rgba(255, 255, 255, 0.15)" : "rgba(255, 255, 255, 0.12)"
+                }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
               >
                 <div className="flex flex-col flex-grow">
                   <h3 className="font-medium text-[16px] md:text-[20px] leading-[26px] md:leading-[27px] text-white mr-4">
                     {item.question}
                   </h3>
 
-                  <div
-                    className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                      activeIndex === index
-                        ? "opacity-100 mt-4 h-auto"
-                        : "opacity-0 h-0"
-                    }`}
-                  >
-                    <p
-                      className="font-normal md:text-[16px] text-[12px] md:leading-[25px] leading-[22px] text-[#FFFFFFBF]"
-                      dangerouslySetInnerHTML={{ __html: item.answer }}
-                    ></p>
-                  </div>
+                  <AnimatePresence initial={false}>
+                    {activeIndex === index && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                        animate={{ opacity: 1, height: "auto", marginTop: 16 }}
+                        exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                        transition={{
+                          duration: 0.4,
+                          ease: "easeInOut",
+                          opacity: { duration: 0.3 },
+                          height: { duration: 0.4 }
+                        }}
+                        style={{ overflow: "hidden" }}
+                      >
+                        <p
+                          className="font-normal md:text-[16px] text-[12px] md:leading-[25px] leading-[22px] text-[#FFFFFFBF]"
+                          dangerouslySetInnerHTML={{ __html: item.answer }}
+                        ></p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
 
-                <button
+                <motion.button
                   aria-expanded={activeIndex === index}
-                  className={`flex-shrink-0 ${
-                    activeIndex === index ? "self-start" : "self-center"
-                  }`}
+                  className="flex-shrink-0 self-start mt-1"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 >
-                  <img
+                  <motion.img
                     src={arrow}
                     alt="arrow"
-                    style={{
-                      transform:
-                        activeIndex === index
-                          ? "rotate(-90deg)"
-                          : "rotate(0deg)",
-                      transition: "transform 0.3s ease-in-out",
+                    animate={{
+                      rotate: activeIndex === index ? -180 : 0
+                    }}
+                    transition={{
+                      duration: 0.4,
+                      ease: "easeInOut"
                     }}
                   />
-                </button>
-              </div>
+                </motion.button>
+              </motion.div>
             ))}
           </div>
         </div>
