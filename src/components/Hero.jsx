@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="relative z-10 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left Side - Text Content */}
-          <div className="flex-1 flex flex-col justify-center items-start gap-6">
+          <div className="flex-[1.2] flex flex-col justify-center items-start gap-6">
             <AnimateFromInside>
               <div className="inline-flex items-center justify-center gap-2 bg-[#00000033]/[0.2] py-2 pl-2 pr-4 rounded-full border border-[#FFFFFF30]">
                 <div
@@ -77,14 +77,14 @@ const Hero = () => {
             <AnimateFromInside>
               <p className="font-normal text-[18px] md:text-[165%] text-[#FFFFFF] text-left">
                 The age of AI is here, and professional traders are going all
-                in. The biggest trading revolution is here.
+                in. <br/> The biggest trading revolution is here.
               </p>
             </AnimateFromInside>
 
             {/* Feature Cards */}
             <AnimateFromInside>
               <div className="flex flex-col md:flex-row items-start gap-6 mt-2">
-                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[215px]">
+                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
                   <img
                     src={autopiloticon}
                     alt={autopiloticon}
@@ -104,7 +104,7 @@ const Hero = () => {
                     Fully Automatic <br /> Trading
                   </span>
                 </div>
-                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[215px]">
+                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
                   <img
                     src={begineerfriendly}
                     alt={begineerfriendly}
@@ -125,11 +125,11 @@ const Hero = () => {
           {/* Right Side - Video Image */}
           <div className="flex-1 flex justify-center lg:justify-end">
             <AnimateFromInside>
-              <div className="relative left-64 w-full">
+              <div className="relative -right-36 w-full">
                 <img
                   src={video}
                   alt="Video preview"
-                  className="w-full h-full object-cover"
+                  className="object-cover"
                 />
               </div>
             </AnimateFromInside>
