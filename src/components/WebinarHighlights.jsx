@@ -7,6 +7,7 @@ import plicon from "../assets/svg/plicon.svg";
 import CTAButton from "../common/CTAButton";
 import newcardicon1 from "../assets/webp/newcardicon1.webp";
 import newcardicon2 from "../assets/webp/newcardicon2.webp";
+import hand from "../assets/webp/hand.webp";
 
 const WebinarHighlights = () => {
   return (
@@ -55,7 +56,7 @@ const WebinarHighlights = () => {
                 </div>
               </div>
               <img
-                src={newcardicon1}
+                src={hand}
                 alt="StrykeX Capital Funding"
                 className="md:w-[550px] object-cover"
               />
