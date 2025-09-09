@@ -12,8 +12,6 @@ import instagram from "../assets/svg/instagram.svg";
 import youtube from "../assets/svg/youtube.svg";
 import linkedin from "../assets/svg/linkedin.svg";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
-import light4 from "../assets/webp/footerlight.webp";
-import lightdesktop from "../assets/webp/pricelight.webp";
 
 const Footer = () => {
   const [isIphone, setIsIphone] = useState(false);

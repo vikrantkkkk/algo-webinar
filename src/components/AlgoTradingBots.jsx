@@ -110,7 +110,7 @@ const AlgoTradingBots = () => {
   ];
 
   const Card = ({ bot }) => (
-    <div className="flex flex-col justify-start items-start bg-[#FFFFFF0D] border border-[#1C2230] rounded-[14px] p-6 transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 flex-1">
+    <div className="flex flex-col justify-start items-start bg-[#FFFFFF0D] border border-[#1C2230] rounded-[14px] p-3 transition-all duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 flex-1">
       {/* Image/Top Section */}
       <div className="relative w-full h-[210px] bg-[#FFFFFF0F] rounded-[12px] mb-4">
         <div className="absolute top-0 left-0 border border-[#336CDC] rounded-br-[12px] rounded-tl-[12px]">
