@@ -56,22 +56,22 @@ const Hero = () => {
             </AnimateFromInside>
 
             <AnimateFromInside>
-              <h1 className="font-normal text-[76px] leading-[100%] text-left font-degular">
-                Learn How To Trade
-                <span
-                  className="bg-gradient-to-r from-[#007AFF] to-[#81F0FF] bg-clip-text text-transparent flex items-center gap-1"
-                  style={{
-                    background:
-                      "linear-gradient(91.62deg, #007AFF -44.13%, #81F0FF 120.92%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
-                  <img src={staricon} alt={staricon} className="object-cover" />{" "}
-                  AI Powered
-                </span>{" "}
-                Algo Trading Tools
-              </h1>
+                <h1 className="font-normal text-[76px] leading-[100%] text-left font-degular">
+                  Learn How To Trade <br/> Using{" "}
+                  <span
+                    className="bg-gradient-to-r from-[#007AFF] to-[#81F0FF] bg-clip-text text-transparent inline-flex items-center gap-1"
+                    style={{
+                      background:
+                        "linear-gradient(91.62deg, #007AFF -44.13%, #81F0FF 120.92%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                  >
+                    <img src={staricon} alt={staricon} className="object-cover" />{" "}
+                    AI Powered
+                  </span>{" "}
+                  <br/> Algo Trading Tools
+                </h1>
             </AnimateFromInside>
 
             <AnimateFromInside>
@@ -129,7 +129,7 @@ const Hero = () => {
                 <img
                   src={video}
                   alt="Video preview"
-                  className="object-cover"
+                  className="object-cover scale-125 transform"
                 />
               </div>
             </AnimateFromInside>
