@@ -160,18 +160,22 @@ const AlgoTradingBots = () => {
       {/* Cards Grid */}
       <div className="flex flex-col gap-6 md:gap-8">
         {/* Row 1 */}
-        <div className="flex gap-6 md:gap-8">
-          {tradingBots.slice(0, 3).map((bot) => (
-            <Card key={bot.id} bot={bot} />
-          ))}
-        </div>
+        <AnimateFromInside>
+          <div className="flex gap-6 md:gap-8">
+            {tradingBots.slice(0, 3).map((bot) => (
+              <Card key={bot.id} bot={bot} />
+            ))}
+          </div>
+        </AnimateFromInside>
 
         {/* Row 2 */}
-        <div className="flex gap-6 md:gap-8">
-          {tradingBots.slice(3, 6).map((bot) => (
-            <Card key={bot.id} bot={bot} />
-          ))}
-        </div>
+        <AnimateFromInside>
+          <div className="flex gap-6 md:gap-8">
+            {tradingBots.slice(3, 6).map((bot) => (
+              <Card key={bot.id} bot={bot} />
+            ))}
+          </div>
+        </AnimateFromInside>
       </div>
       <div className="flex justify-center items-center">
         <AnimateFromInside>
