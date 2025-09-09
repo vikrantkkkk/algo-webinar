@@ -11,6 +11,7 @@ import WebinarBonus from "../components/WebinarBonus.jsx";
 import Coach from "../components/Coach.jsx";
 import Certified from "../components/Certified.jsx";
 import SuperTraders from "../components/SuperTraders.jsx";
+import Quotes from "../components/Quotes.jsx";
 
 const LandingPage = () => {
   return (
@@ -41,6 +42,9 @@ const LandingPage = () => {
         </div>
         <div>
           <Certified />
+        </div>
+        <div>
+          <Quotes />
         </div>
         <div>
           <SuperTraders />
