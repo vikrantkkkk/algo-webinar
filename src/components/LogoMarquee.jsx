@@ -21,7 +21,7 @@ const LogoMarquee = () => {
     { icon: eight, name: "eight" },
   ];
 
-  const logos1 = [...logos, ...logos, ...logos];
+  const logos1 = [...logos, ...logos, ...logos, ...logos];
 
   return (
     <div className="bg-[#010611] text-white flex flex-col items-center md:px-40 pt-16 gap-6 w-full">
@@ -40,7 +40,7 @@ const LogoMarquee = () => {
           </p>
         </AnimateFromInside>
         <div className="overflow-hidden group z-20 w-screen">
-          <div className="flex items-center gap-9 h-auto md:animate-marquee animate-marquee1 group-hover:[animation-play-state:paused]">
+          <div className="flex items-center gap-6 h-auto md:animate-marquee animate-marquee1 group-hover:[animation-play-state:paused]">
             {logos1.map((logo, index) => (
               <React.Fragment key={index}>
                 <div className="flex justify-center items-center shrink-0">

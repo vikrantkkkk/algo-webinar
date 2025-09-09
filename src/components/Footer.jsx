@@ -27,12 +27,10 @@ const Footer = () => {
 
   return (
     <footer
-      className={`bg-[#010611] pt-20  ${
-        isIphone ? "pb-40" : "pb-32"
-      } relative`}
+      className={`bg-[#010611] pt-20  ${isIphone ? "pb-40" : "pb-32"} relative`}
     >
       <div className="px-4">
-        <div className="flex flex-col justify-center items-center rounded-[24px] bg-[#2323234D]/[0.3] w-full z-20 relative overflow-hidden">
+        <div className="flex flex-col justify-center items-center rounded-[24px] bg-[#2323234D] w-full z-20 relative overflow-hidden">
           <div className="flex md:flex-row rounded-[24px]  flex-col md:justify-between md:items-center items-start  md:px-32  md:py-6 py-6 px-6 w-full relative  md:gap-2 gap-4  before:absolute before:inset-0 before:rounded-full before:border-b-[1px] before:border-transparent before:[border-image-source:linear-gradient(270.82deg,rgba(255,255,255,0.1)_2.68%,#ffffff_33.24%,rgba(255,255,255,0.1)_99.29%)] before:[border-image-slice:1] before:pointer-events-none">
             <AnimateFromInside>
               <div className="flex flex-col justify-start items-start gap-4">
@@ -405,32 +403,22 @@ const Footer = () => {
               </div>
             </AnimateFromInside>
           </div>
-          <img
-            src={light4}
-            alt={light4}
-            className="absolute  w-full h-full  object-cover -z-10 md:hidden"
-          />
-          <img
-            src={lightdesktop}
-            alt={lightdesktop}
-            className="absolute  w-full h-full  object-cover -z-10 md:block hidden"
-          />
         </div>
       </div>
       <div
         className="font-inter mx-auto gap-3 justify-between md:flex hidden items-center px-28 py-4 w-screen fixed z-20 bottom-0"
         style={{
           background:
-            "linear-gradient(90.44deg, #3E57DA -7.94%, #212E74 97.48%), linear-gradient(90.44deg, #3E57DA -7.94%, #212E74 97.48%)",
+            "linear-gradient(90.62deg, #007AFF 21.32%, #81F0FF 129.21%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))",
         }}
       >
-        <div className="flex flex-col justify-start items-start text-white gap-2">
-          <p className="font-bold text-[22px] leading-[100%]">Subscribe Now </p>
+        <div className="flex justify-start items-center text-white gap-2">
+          <p className="font-bold text-[22px] leading-[100%]">Free </p>
           <p className="font-inter  font-medium text-[24px] leading-[20px]">
-            <span className="font-bold text-[42px] leading-[100%] ">
-              ₹ 1,999<span className="text-[22px]">/Month</span>
+            <span className="font-bold text-[42px] leading-[100%] stroke-[1.5px] line-through">
+              ₹199
             </span>{" "}
-            <span className="text-[18px]">(Inclusive of 18% GST)</span>
+            <span className="text-[18px]">Register Now (Limited Seats)</span>
           </p>
         </div>
         <div
@@ -443,24 +431,20 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div
+      <div 
         className="font-inter mx-auto gap-3 justify-between md:hidden px-4 flex items-center md:px-28 py-4 w-screen fixed z-20 bottom-0"
         style={{
           background:
-            "linear-gradient(90.99deg, #3E57DA 38.08%, #212E74 111.3%)",
+            "linear-gradient(90.62deg, #007AFF 21.32%, #81F0FF 129.21%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))",
         }}
       >
-        <div className="flex flex-col justify-start items-start text-white gap-2">
-          <p className="font-bold text-[9.43px] leading-[100%]">
-            Starting at :{" "}
-          </p>
-          <p className="font-inter flex flex-col font-medium text-[24px] leading-[20px]">
-            <span className="font-bold text-[24px] leading-[100%] ">
-              ₹ 1,999<span className="text-[13px]">/Month</span>
-            </span>{" "}
-            <span className="text-[7.71px]">(Inclusive of 18% GST)</span>
-          </p>
-        </div>
+         <div className="flex justify-start items-center text-white gap-2">
+           <span className="font-bold text-[22px] leading-[100%]">Free</span>
+           <span className="font-bold text-[24px] leading-[100%] line-through decoration-white decoration-2 flex items-center">
+             ₹199
+           </span>
+           <span className="font-medium text-[18px] leading-[100%]">Register Now (Limited Seats)</span>
+         </div>
         <div
           onClick={() => {}}
           className="flex justify-center items-center gap-2 bg-white py-3 px-6 rounded-[5px] cursor-pointer"

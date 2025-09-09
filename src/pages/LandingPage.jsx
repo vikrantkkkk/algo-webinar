@@ -8,6 +8,9 @@ import Faq from "../components/Faq.jsx";
 import ThreeMInutesVideo from "../components/ThreeMInutesVideo.jsx";
 import CompantLogoMarquee from "../components/CompantLogoMarquee.jsx";
 import WebinarBonus from "../components/WebinarBonus.jsx";
+import Coach from "../components/Coach.jsx";
+import Certified from "../components/Certified.jsx";
+import SuperTraders from "../components/SuperTraders.jsx";
 
 const LandingPage = () => {
   return (
@@ -32,6 +35,15 @@ const LandingPage = () => {
         </div>
         <div>
           <WebinarBonus />
+        </div>
+        <div>
+          <Coach />
+        </div>
+        <div>
+          <Certified />
+        </div>
+        <div>
+          <SuperTraders />
         </div>
       <div>
         <Faq />
