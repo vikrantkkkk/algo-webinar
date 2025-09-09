@@ -140,22 +140,21 @@ const AlgoTradingBots = () => {
   return (
     <div className="bg-[#010611] text-white flex flex-col gap-6 justify-center md:px-40 px-4 pt-20 pb-8 w-full">
       {/* Heading */}
-      <div className="flex flex-col items-start w-full gap-3">
-        <AnimateFromInside>
-          <p className="font-normal md:text-[56px] text-[34px] leading-tight font-degular">
-            Winning Pre Built Algo Trading Bots{" "}
-            <span className="text-[#FFFFFF99]">– Exclusive Showcase</span>
-          </p>
-        </AnimateFromInside>
-
-        <AnimateFromInside>
-          <p className="font-normal text-[20px] leading-[30px] text-[#C8D0E2]">
-            Get ready to blow your minds when we reveal our fully automated,
-            ready to use – pre built algo <br /> trading strategies which will
-            put your wealth creation journey on autopilot.
-          </p>
-        </AnimateFromInside>
-      </div>
+      <AnimateFromInside>
+        <p className="font-semibold md:text-[56px] text-[34px] leading-[74px] font-degular">
+          Winning Pre Built Algo Trading Bots{" "}
+          <span className="text-[#FFFFFF99] font-normal">
+            <br />– Exclusive Showcase
+          </span>
+        </p>
+      </AnimateFromInside>
+      <AnimateFromInside>
+        <p className="font-normal text-[20px] leading-[30px] text-[#C8D0E2]">
+          Get ready to blow your minds when we reveal our fully automated, ready
+          to use – pre built algo <br /> trading strategies which will put your
+          wealth creation journey on autopilot.
+        </p>
+      </AnimateFromInside>
 
       {/* Cards Grid */}
       <div className="flex flex-col gap-6 md:gap-8">

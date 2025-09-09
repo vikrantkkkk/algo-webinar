@@ -1,11 +1,5 @@
 import React from "react";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
-import card7 from "../assets/webp/card7.webp";
-import card8 from "../assets/webp/card8.webp";
-import card9 from "../assets/webp/card9.webp";
-import camera from "../assets/svg/camera.svg";
-import course from "../assets/svg/course.svg";
-import live from "../assets/svg/live.svg";
 import algocardicon from "../assets/svg/algocardicon.svg";
 import elitetradeicon from "../assets/svg/elitetradeicon.svg";
 import timeicon from "../assets/svg/timeicon.svg";
@@ -18,7 +12,7 @@ const WebinarHighlights = () => {
   return (
     <div className="bg-[#010611] text-white flex flex-col md:px-40 px-4 pt-28 pb-8 gap-6 w-full min-w-[1270px]">
       <AnimateFromInside>
-        <p className="font-normal md:text-[64px] text-[#FFFFFF99] text-[40px] leading-[100%] font-degular text-left">
+        <p className="font-normal md:text-[64px] text-[#FFFFFF99] text-[40px] leading-[74px] font-degular text-left">
           <span className="font-semibold text-white">Webinar Highlights</span> –
           What Will Be Covered ?
         </p>

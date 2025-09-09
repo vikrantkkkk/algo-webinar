@@ -7,7 +7,7 @@ const ThreeMInutesVideo = () => {
   return (
     <div className="bg-[#010611] text-white flex flex-col md:px-40 pt-20 pb-8 gap-6 w-full min-w-[1270px]">
       <AnimateFromInside>
-        <p className="font-normal md:text-[64px] text-[#FFFFFF99] text-[40px] leading-[100%]  font-degular text-left">
+        <p className="font-normal md:text-[64px] text-[#FFFFFF99] text-[40px] leading-[74px]  font-degular text-left">
           <span className="font-semibold text-white">Watch This 3 Minute Video</span> To
           Know The <br /> Power of AI Powered Algo Trading
         </p>
