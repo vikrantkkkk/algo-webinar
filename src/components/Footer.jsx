@@ -11,6 +11,7 @@ import twitter from "../assets/svg/twitter.svg";
 import instagram from "../assets/svg/instagram.svg";
 import youtube from "../assets/svg/youtube.svg";
 import linkedin from "../assets/svg/linkedin.svg";
+import buttonringicon from "../assets/svg/buttonringicon.svg";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
 
 const Footer = () => {
@@ -410,47 +411,64 @@ const Footer = () => {
             "linear-gradient(90.62deg, #007AFF 21.32%, #81F0FF 129.21%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))",
         }}
       >
-        <div className="flex justify-start items-center text-white gap-2">
-          <p className="font-bold text-[22px] leading-[100%]">Free </p>
+        <div className="flex justify-center items-center text-white gap-2">
+          <p className="font-bold font-inter text-[48px] leading-[100%]">
+            Free{" "}
+          </p>
           <p className="font-inter  font-medium text-[24px] leading-[20px]">
-            <span className="font-bold text-[42px] leading-[100%] stroke-[1.5px] line-through">
+            <span className="font-normal font-inter text-[28px] leading-[100%] stroke-[1.5px] line-through">
               ₹199
             </span>{" "}
-            <span className="text-[18px]">Register Now (Limited Seats)</span>
+            <span className="font-medium font-inter text-[32px] leading-[100%]">
+              Register Now (Limited Seats)
+            </span>
           </p>
         </div>
         <div
           onClick={() => {}}
-          className="flex justify-center items-center gap-2 bg-white py-3 px-6 rounded-[10px] cursor-pointer"
+          className="flex relative justify-center items-center gap-2 bg-white py-3 px-6 rounded-[10px] cursor-pointer"
         >
           <img src={x} alt={x} className="h-[37px] object-cover" />
           <p className="font-bold text-[24px] leading-[28px] bg-[linear-gradient(90.44deg,_#3E57DA_-7.94%,_#212E74_97.48%)] bg-clip-text text-transparent">
-            Automate Your Trading Now!
+            Automate Your Strategies Now!
           </p>
+          <img
+            src={buttonringicon}
+            alt={buttonringicon}
+            className="absolute right-10 top-1/2 -translate-y-1/2 object-cover"
+          />
         </div>
       </div>
-      <div 
-        className="font-inter mx-auto gap-3 justify-between md:hidden px-4 flex items-center md:px-28 py-4 w-screen fixed z-20 bottom-0"
+      <div
+        className="font-inter mx-auto justify-between md:hidden px-4 flex flex-col items-center md:px-28 py-4 w-screen fixed z-20 bottom-0 gap-3"
         style={{
           background:
             "linear-gradient(90.62deg, #007AFF 21.32%, #81F0FF 129.21%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))",
         }}
       >
-         <div className="flex justify-start items-center text-white gap-2">
-           <span className="font-bold text-[22px] leading-[100%]">Free</span>
-           <span className="font-bold text-[24px] leading-[100%] line-through decoration-white decoration-2 flex items-center">
-             ₹199
-           </span>
-           <span className="font-medium text-[18px] leading-[100%]">Register Now (Limited Seats)</span>
-         </div>
+        <div className="flex justify-center items-center text-white gap-2 w-full">
+          <span className="font-bold font-inter text-[29px] leading-[100%]">Free</span>
+          <span className="font-medium font-inter text-[18px] leading-[100%] line-through decoration-white decoration-1 flex items-center">
+            ₹199
+          </span>
+          <div className="w-px h-4 bg-white opacity-60"></div>
+          <span className="font-bold font-inter text-[16px] leading-[17px]">
+            Register Now (Limited Seats)
+          </span>
+        </div>
         <div
           onClick={() => {}}
-          className="flex justify-center items-center gap-2 bg-white py-3 px-6 rounded-[5px] cursor-pointer"
+          className="flex relative justify-center items-center gap-2 bg-white py-3 px-6 rounded-[10px] cursor-pointer w-full overflow-hidden"
         >
-          <img src={x} alt={x} className="h-[16px] object-cover" />
-          <p className="font-bold text-[18px] leading-[28px] bg-[linear-gradient(90.44deg,_#3E57DA_-7.94%,_#212E74_97.48%)] bg-clip-text text-transparent">
-            Subscribe Now
+          <img src={x} alt={x} className="h-[20px] object-cover" />
+          <p className="font-bold text-[16px] leading-[20px] bg-[linear-gradient(90.44deg,_#3E57DA_-7.94%,_#212E74_97.48%)] bg-clip-text text-transparent">
+            Automate Your Strategies Now!
           </p>
+          <img
+            src={buttonringicon}
+            alt={buttonringicon}
+            className="absolute right-10 top-1/2 -translate-y-1/2 object-cover"
+          />
         </div>
       </div>
     </footer>
