@@ -12,22 +12,26 @@ const faqData = [
   {
     id: 2,
     question: "Who should attend this webinar?",
-    answer: "This webinar is for beginners, retail traders, busy professionals, and even experienced investors who want to trade smarter using AI and automation.",
+    answer:
+      "This webinar is for beginners, retail traders, busy professionals, and even experienced investors who want to trade smarter using AI and automation.",
   },
   {
     id: 3,
     question: "Will I learn practical strategies or just theory?",
-    answer: "This is a hands-on, practical session. You'll see real strategies, live examples, and pre-built bots that you can start using right away.",
+    answer:
+      "This is a hands-on, practical session. You'll see real strategies, live examples, and pre-built bots that you can start using right away.",
   },
   {
     id: 4,
     question: "How do I join the webinar after registering?",
-    answer: "Once you register, you'll get a confirmation email + WhatsApp/SMS reminder with the Zoom link and joining instructions.",
+    answer:
+      "Once you register, you'll get a confirmation email + WhatsApp/SMS reminder with the Zoom link and joining instructions.",
   },
   {
     id: 5,
     question: "How can I connect with the Stockwiz support team?",
-    answer: "You can reach out to us via:<br/>✉️ Email: help@stockwiz.in<br/>📞 Phone: +91 6350670245",
+    answer:
+      "You can reach out to us via:<br/>✉️ Email: help@stockwiz.in<br/>📞 Phone: +91 6350670245",
   },
 ];
 
@@ -39,12 +43,13 @@ const Faq = () => {
   };
 
   return (
-    <div className="flex items-center justify-between bg-[#010611] w-full h-auto md:pt-28 pt-20 pb-8 px-4 md:px-80">
+    <div className="flex items-center justify-between bg-[#010611] w-full h-auto md:pt-28 pt-20 md:pb-8 px-4 md:px-40">
       <div className="flex flex-col md:flex-row  w-full mx-auto">
-        <div className="md:w-[40%] w-full flex md:justify-start justify-center md:items-start items-center flex-col md:mt-4 text-center md:text-left">
-          <h2 className="font-semibold  md:text-[48px] text-[32px] leading-[42px] md:leading-[62px] text-white">
-            Frequently Asked Questions
-          </h2>
+        <div className="md:w-[40%] w-full flex md:justify-start justify-start md:items-start items-start flex-col md:mt-4 text-left">
+          <p className="font-normal md:text-[64px] text-[32px] text-[#FFFFFF99] md:leading-[74px] leading-[36px] font-degular text-left">
+            Frequently <br />
+            <span className="font-semibold text-white"> Asked Questions</span>
+          </p>
         </div>
 
         <div className="flex-1 mt-6 md:mt-0">
@@ -53,12 +58,15 @@ const Faq = () => {
               <motion.div
                 onClick={() => toggleFAQ(index)}
                 key={item.id}
-                className={`w-full cursor-pointer md:max-w-[750px] rounded-[16px] px-6 py-8 bg-[#FFFFFF1F] text-white h-auto flex ${
+                className={`w-full cursor-pointer md:max-w-[750px] rounded-[16px] p-6 bg-[#FFFFFF1F] text-white h-auto flex ${
                   activeIndex === index ? "items-start" : "items-center"
                 }`}
                 initial={false}
                 animate={{
-                  backgroundColor: activeIndex === index ? "rgba(255, 255, 255, 0.15)" : "rgba(255, 255, 255, 0.12)"
+                  backgroundColor:
+                    activeIndex === index
+                      ? "rgba(255, 255, 255, 0.15)"
+                      : "rgba(255, 255, 255, 0.12)",
                 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
@@ -78,7 +86,7 @@ const Faq = () => {
                           duration: 0.4,
                           ease: "easeInOut",
                           opacity: { duration: 0.3 },
-                          height: { duration: 0.4 }
+                          height: { duration: 0.4 },
                         }}
                         style={{ overflow: "hidden" }}
                       >
@@ -101,11 +109,11 @@ const Faq = () => {
                     src={arrow}
                     alt="arrow"
                     animate={{
-                      rotate: activeIndex === index ? -180 : 0
+                      rotate: activeIndex === index ? -180 : 0,
                     }}
                     transition={{
                       duration: 0.4,
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
                   />
                 </motion.button>
