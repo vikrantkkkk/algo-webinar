@@ -24,19 +24,18 @@ const LogoMarquee = () => {
   const logos1 = [...logos, ...logos, ...logos, ...logos];
 
   return (
-    <div className="bg-[#010611] text-white flex flex-col items-center md:px-40 pt-16 gap-6 w-full">
-      <div className="flex flex-col md:gap-5 gap-2 justify-center items-center w-screen md:py-5 py-2">
+    <div className="bg-[#010611] text-white flex flex-col items-center md:px-40 pt-20 md:pt-16 gap-6 w-full">
+      <div className="flex flex-col md:gap-5 gap-2 justify-center items-center w-full md:py-5 py-2">
         <AnimateFromInside>
-          <p className="flex items-center gap-2 font-medium text-[24px] leading-6">
-            Powerful AI{" "}
-            <span>
-              <img
-                src={staricon}
-                alt={staricon}
-                className="object-cover h-[30px]"
-              />
-            </span>{" "}
-            Tools To Supercharge Your Wealth Creation
+           <p className="text-center w-full font-medium md:text-[24px] text-[18px] leading-[28px]">
+              Powerful AI{" "}
+             <img
+               src={staricon}
+               alt={staricon}
+               className="object-cover md:h-[30px] h-[24px] inline"
+             />
+              {" "}Tools To Supercharge Your <br className="md:hidden block" /> Wealth
+              Creation
           </p>
         </AnimateFromInside>
         <div className="overflow-hidden group z-20 w-screen">

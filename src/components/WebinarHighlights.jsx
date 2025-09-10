@@ -11,16 +11,16 @@ import hand from "../assets/webp/hand.webp";
 
 const WebinarHighlights = () => {
   return (
-    <div className="bg-[#010611] text-white flex flex-col md:px-40 px-4 pt-28 pb-8 gap-6 w-full min-w-[1270px]">
+    <div className="bg-[#010611] text-white flex flex-col md:px-40 px-4 md:pt-28 pt-20 pb-8 md:gap-6 gap-4 w-full">
       <AnimateFromInside>
-        <p className="font-normal md:text-[64px] text-[#FFFFFF99] text-[40px] leading-[74px] font-degular text-left">
+        <p className="font-normal md:text-[64px] text-[32px] md:text-[#FFFFFF99] md:leading-[74px] leading-[36px] font-degular text-left">
           <span className="font-semibold text-white">Webinar Highlights</span> –
-          What Will Be Covered ?
+          What <br className="block md:hidden" /> Will Be Covered ?
         </p>
       </AnimateFromInside>
 
       <AnimateFromInside>
-        <p className="font-normal text-[24px] leading-[30px] text-left">
+        <p className="font-normal md:text-[24px] text-[14px] md:leading-[30px] leading-[18px] text-left">
           Learn the secrets sauce of how professional institutional traders
           leverage the power of artificial intelligence and <br /> algo trading
           for breakthrough results.
@@ -31,20 +31,21 @@ const WebinarHighlights = () => {
           <div className="w-full flex justify-center">
             <div className="bg-[#000E2E] w-full h-auto p-6 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
               <div className="flex flex-col justify-between h-full gap-4">
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col md:gap-6 gap-4">
                   <img
                     src={algocardicon}
                     alt={algocardicon}
                     className="w-[52px]"
                   />
-                  <p className="font-semibold text-[20px] md:text-[32px] leading-[100%] md:leading-[44px] font-degular">
+                  <p className="font-semibold text-[22px] md:text-[32px] leading-[28px] md:leading-[44px] font-degular">
                     <span className="text-[#FFFFFF99] font-normal">
                       Everything You Need To
                     </span>
-                    <br />
+                    <br className="block md:hidden" />
                     Learn About AI & Algo Trading
                   </p>
-                  <p className="font-medium text-[14px] md:text-[18px] md:leading-[28px] leading-[22px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
+                  Everything About
+                  <p className="font-medium text-[12px] md:text-[18px] md:leading-[28px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
                     The world of trading is moving fast – extremely fast, and in
                     this era of algo trading and artificial intelligence, we
                     will give you a sneak peek into how this new form of trading
@@ -58,7 +59,7 @@ const WebinarHighlights = () => {
               <img
                 src={hand}
                 alt="StrykeX Capital Funding"
-                className="md:w-[550px] object-cover"
+                className="w-full max-w-[550px] md:w-[550px] object-cover"
               />
             </div>
           </div>
@@ -67,20 +68,21 @@ const WebinarHighlights = () => {
           <div className="w-full flex justify-center">
             <div className="bg-[#001B26] w-full h-auto p-6 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
               <div className="flex flex-col justify-between h-full gap-4">
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col md:gap-6 gap-4">
                   <img
                     src={elitetradeicon}
                     alt={elitetradeicon}
                     className="w-[52px]"
                   />
-                  <p className="font-semibold text-[20px] md:text-[32px] leading-[100%] md:leading-[44px] font-degular">
+                  <p className="font-semibold text-[22px] md:text-[32px] leading-[28px] md:leading-[44px] font-degular">
                     <span className="text-[#FFFFFF99] font-normal">
-                      How Tools Like Chat GPT, Trading View & StrykeX <br /> Can
-                      Get You To The {"  "}
+                      How Tools Like Chat GPT, Trading View & StrykeX{" "}
+                      <br className="hidden md:block" /> Can Get You To The{" "}
+                      {"  "}
                     </span>
                     Top 1% Elite Traders
                   </p>
-                  <p className="font-medium text-[14px] md:text-[18px] md:leading-[28px] leading-[22px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
+                  <p className="font-medium text-[12px] md:text-[18px] md:leading-[28px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
                     Gone are the days where traders were glued to their screen
                     from 9:15 am till 3:30pm – scanning, executing, managing
                     their trades manually. This is ineffective and a perfect
@@ -96,7 +98,7 @@ const WebinarHighlights = () => {
               <img
                 src={newcardicon1}
                 alt="StrykeX Capital"
-                className="md:w-[550px] object-cover"
+                className="w-full max-w-[550px] md:w-[550px] object-cover"
               />
             </div>
           </div>
@@ -105,16 +107,16 @@ const WebinarHighlights = () => {
           <div className="w-full flex justify-center">
             <div className="bg-[#002323] w-full h-auto p-6 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
               <div className="flex flex-col justify-between h-full gap-4">
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col md:gap-6 gap-4">
                   <img src={timeicon} alt={timeicon} className="w-[52px]" />
-                  <p className="font-semibold text-[20px] md:text-[32px] leading-[100%] md:leading-[44px] font-degular">
+                  <p className="font-semibold text-[22px] md:text-[32px] leading-[28px] md:leading-[44px] font-degular">
                     <span className="text-[#FFFFFF99] font-normal">
-                      Learn To Create, Back Test and Deploy <br /> Trading Bots
+                      Learn To Create, Back Test and Deploy <br className="hidden md:block" /> Trading Bots
                       Using
                     </span>{" "}
                     Our Secret Strategies
                   </p>
-                  <p className="font-medium text-[14px] md:text-[18px] md:leading-[28px] leading-[22px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
+                  <p className="font-medium text-[12px] md:text-[18px] md:leading-[28px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
                     Unleash the power of algorithmic trading tools which lets
                     you create, test, deploy your strategies spanning across
                     price action, smart money concepts, institutional price
@@ -129,7 +131,7 @@ const WebinarHighlights = () => {
               <img
                 src={newcardicon1}
                 alt="StrykeX Funding"
-                className="md:w-[550px] object-cover"
+                className="w-full max-w-[550px] md:w-[550px] object-cover"
               />
             </div>
           </div>
@@ -138,15 +140,15 @@ const WebinarHighlights = () => {
           <div className="w-full flex justify-center">
             <div className="bg-[#002419] w-full  h-auto p-6 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
               <div className="flex flex-col justify-between h-full gap-4">
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col md:gap-6 gap-4">
                   <img src={plicon} alt={plicon} className="w-[52px]" />
-                  <p className="font-semibold text-[20px] md:text-[36px] leading-[100%] md:leading-[52px] font-degular">
-                    Detailed Verified Profit / Loss Statement <br />
+                  <p className="font-semibold text-[22px] md:text-[36px] leading-[28px] md:leading-[52px] font-degular">
+                    Detailed Verified Profit / Loss Statement <br className="block md:hidden" />
                     <span className="text-[#FFFFFF99] font-normal">
                       & Algo Trade History
                     </span>
                   </p>
-                  <p className="font-medium text-[14px] md:text-[18px] md:leading-[28px] leading-[22px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
+                  <p className="font-medium text-[12px] md:text-[18px] md:leading-[28px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
                     - Get access to detailed case studies of verified real
                     trades executed on autopilot from our proprietary custom
                     algo trading robots which seamlessly scan, analyse, deploy
@@ -161,13 +163,13 @@ const WebinarHighlights = () => {
               <img
                 src={newcardicon2}
                 alt="StrykeX Funding"
-                className="md:w-[550px] object-cover"
+                className="w-full max-w-[550px] md:w-[550px] object-cover"
               />
             </div>
           </div>
         </AnimateFromInside>
         <AnimateFromInside>
-          <div className="flex justify-center">
+          <div className="flex justify-center md:mt-0 mt-4">
             <CTAButton />
           </div>
         </AnimateFromInside>

@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full flex items-center justify-center text-white px-4 sm:px-6 md:px-20 lg:px-32 xl:px-40 pt-[104px] pb-12 md:pt-36 md:pb-20 bg-[#010611]"
+      className="relative w-full flex items-center justify-center text-white px-4 sm:px-6 md:px-20 lg:px-32 xl:px-40 pt-24 pb-12 md:pt-36 md:pb-20 bg-[#010611]"
     >
       {/* Background Image - Desktop */}
       <div className="absolute inset-0 w-full h-full z-0 p-4 hidden md:block">
@@ -67,11 +67,16 @@ const Hero = () => {
 
             <AnimateFromInside>
               <h1 className="font-normal text-[40px] sm:text-[42px] md:text-[56px] lg:text-[66px] xl:text-[76px] md:leading-[72px] leading-[41px] text-left font-degular">
-                Learn How To Trade <br className="hidden sm:block" />{" "}
-                <span className="sm:hidden">Using </span>
-                <span className="hidden sm:inline">Using </span>
+                Learn How To Trade
+                <br />
+                Using{" "}
+                <img
+                  src={staricon}
+                  alt={staricon}
+                  className="object-cover w-[32px] h-[32px] md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-auto xl:h-auto inline"
+                />
                 <span
-                  className="bg-gradient-to-r from-[#007AFF] to-[#81F0FF] bg-clip-text text-transparent inline-flex items-center gap-1"
+                  className="pl-1 bg-gradient-to-r from-[#007AFF] to-[#81F0FF] bg-clip-text text-transparent"
                   style={{
                     background:
                       "linear-gradient(91.62deg, #007AFF -44.13%, #81F0FF 120.92%)",
@@ -79,14 +84,10 @@ const Hero = () => {
                     WebkitTextFillColor: "transparent",
                   }}
                 >
-                  <img
-                    src={staricon}
-                    alt={staricon}
-                    className="object-cover w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-auto xl:h-auto"
-                  />{" "}
                   AI Powered
-                </span>{" "}
-                <br /> Algo Trading Tools
+                </span>
+                <br />
+                Algo Trading Tools
               </h1>
             </AnimateFromInside>
 
@@ -201,7 +202,7 @@ const Hero = () => {
           </AnimateFromInside>
 
           {/* Right Side - Video Image */}
-          <div className="flex-1 flex justify-center lg:justify-end w-full md:mt-6 mt-[55px]">
+          <div className="flex-1 flex justify-center lg:justify-end w-full md:mt-6 mt-[60px]">
             <AnimateFromInside>
               <div className="relative w-full max-w-[400px] lg:max-w-none -right-12 lg:-right-36 lg:w-full">
                 <img

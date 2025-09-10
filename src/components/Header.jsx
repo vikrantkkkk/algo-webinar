@@ -59,7 +59,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 w-full md:px-40 px-4">
+    <header className="fixed md:top-8 top-6 left-1/2 transform -translate-x-1/2 z-50 w-full md:px-40 px-4">
       <div className="bg-[#0000005C] backdrop-blur-[30px] rounded-[20px] px-4 md:py-3 py-2">
         <nav className="relative flex items-center justify-between">
           {/* Logo */}

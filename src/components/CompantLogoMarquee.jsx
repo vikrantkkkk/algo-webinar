@@ -25,9 +25,9 @@ const CompantLogoMarquee = () => {
 
   return (
     <div className="bg-[#010611] text-white flex flex-col items-center md:px-40 pt-16 gap-6 w-full">
-      <div className="flex flex-col md:gap-5 gap-2 justify-center items-center w-screen md:py-5 py-2">
+      <div className="flex flex-col md:gap-5 gap-2 justify-center items-center w-full md:py-5 py-2">
         <AnimateFromInside>
-          <p className="flex items-center gap-2 font-normal text-[16px] leading-6">
+          <p className="text-center w-full font-medium md:text-[24px] text-[18px] leading-[28px]">
             Trusted by <span className="font-semibold">Professionals</span>{" "}
             Working At Top Companies Like
           </p>
