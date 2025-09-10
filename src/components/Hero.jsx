@@ -2,6 +2,7 @@ import React from "react";
 import { AnimateFromInside } from "../common/ScrollFadeIn";
 import CTAButton from "../common/CTAButton";
 import background from "../assets/webp/background.webp";
+import mobilebackground from "../assets/webp/mobilebackground.webp";
 import video from "../assets/webp/video2.webp";
 import staricon from "../assets/svg/staricon.svg";
 import autopiloticon from "../assets/svg/autopiloticon.svg";
@@ -12,10 +13,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full flex items-center justify-center text-white px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 md:pt-36 md:pb-20 bg-[#010611]"
+      className="relative w-full flex items-center justify-center text-white px-4 sm:px-6 md:px-20 lg:px-32 xl:px-40 pt-[104px] pb-12 md:pt-36 md:pb-20 bg-[#010611]"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 w-full h-full z-0 p-4">
+      {/* Background Image - Desktop */}
+      <div className="absolute inset-0 w-full h-full z-0 p-4 hidden md:block">
         <img
           src={background}
           alt=""
@@ -23,13 +24,22 @@ const Hero = () => {
         />
       </div>
 
+      {/* Background Image - Mobile */}
+      <div className="absolute inset-0 w-full h-full z-0 md:p-2 md:hidden">
+        <img
+          src={mobilebackground}
+          alt=""
+          className="object-cover rounded-b-[24px]"
+        />
+      </div>
+
       {/* Main Content */}
       <div className="relative z-10 w-full">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-4 md:gap-8 lg:gap-12">
           {/* Left Side - Text Content */}
-          <div className="flex-[1.2] flex flex-col justify-center items-start gap-6">
+          <div className="flex-[1.3] flex flex-col justify-center items-start gap-4 md:gap-6 w-full">
             <AnimateFromInside>
-              <div className="inline-flex items-center justify-center gap-2 bg-[#00000033]/[0.2] py-2 pl-2 pr-4 rounded-full border border-[#FFFFFF30]">
+              <div className="inline-flex items-center justify-center gap-2 bg-[#00000033]/[0.2] py-2 pl-2 pr-3 md:pr-4 rounded-full border border-[#FFFFFF30]">
                 <div
                   className="p-[1px] rounded-full"
                   style={{
@@ -38,98 +48,166 @@ const Hero = () => {
                   }}
                 >
                   <span
-                    className="font-bold leading-[100%] flex items-center gap-2 text-white text-[18px]  px-4 py-2 rounded-full"
+                    className="font-bold leading-[100%] flex items-center gap-1 md:gap-2 text-white text-[14px] md:text-[18px] px-2 md:px-4 py-1 md:py-2 rounded-full"
                     style={{
                       background:
                         "linear-gradient(101.35deg, #000000 1.29%, #FF3C3C 140.52%)",
                     }}
                   >
-                    <span className="h-3 w-3 rounded-full bg-[#F04141] animate-pulse inline-block"></span>
+                    <span className="h-2 w-2 md:h-3 md:w-3 rounded-full bg-[#F04141] animate-pulse inline-block"></span>
                     Live
                   </span>
                 </div>
 
-                <p className="text-[18px] leading-6 font-normal">
+                <p className="text-[12px] md:text-[18px] leading-5 md:leading-6 font-medium">
                   90 Mins Webinar on A.I Powered Algo Trading
                 </p>
               </div>
             </AnimateFromInside>
 
             <AnimateFromInside>
-                <h1 className="font-normal text-[76px] leading-[100%] text-left font-degular">
-                  Learn How To Trade <br/> Using{" "}
-                  <span
-                    className="bg-gradient-to-r from-[#007AFF] to-[#81F0FF] bg-clip-text text-transparent inline-flex items-center gap-1"
-                    style={{
-                      background:
-                        "linear-gradient(91.62deg, #007AFF -44.13%, #81F0FF 120.92%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    <img src={staricon} alt={staricon} className="object-cover" />{" "}
-                    AI Powered
-                  </span>{" "}
-                  <br/> Algo Trading Tools
-                </h1>
+              <h1 className="font-normal text-[40px] sm:text-[42px] md:text-[56px] lg:text-[66px] xl:text-[76px] md:leading-[72px] leading-[41px] text-left font-degular">
+                Learn How To Trade <br className="hidden sm:block" />{" "}
+                <span className="sm:hidden">Using </span>
+                <span className="hidden sm:inline">Using </span>
+                <span
+                  className="bg-gradient-to-r from-[#007AFF] to-[#81F0FF] bg-clip-text text-transparent inline-flex items-center gap-1"
+                  style={{
+                    background:
+                      "linear-gradient(91.62deg, #007AFF -44.13%, #81F0FF 120.92%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  <img
+                    src={staricon}
+                    alt={staricon}
+                    className="object-cover w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-auto xl:h-auto"
+                  />{" "}
+                  AI Powered
+                </span>{" "}
+                <br /> Algo Trading Tools
+              </h1>
             </AnimateFromInside>
 
             <AnimateFromInside>
-              <p className="font-normal text-[18px] md:text-[165%] text-[#FFFFFF] text-left">
+              <p className="font-normal text-[12px] sm:text-[18px] md:text-[20px] text-[#FFFFFF] text-left leading-[18px] md:leading-[28px]">
                 The age of AI is here, and professional traders are going all
-                in. <br/> The biggest trading revolution is here.
+                in. <br className="hidden sm:block" />{" "}
+                <span className="sm:hidden">
+                  The biggest trading revolution is here.
+                </span>
+                <span className="hidden sm:inline">
+                  The biggest trading revolution is here.
+                </span>
               </p>
             </AnimateFromInside>
 
             {/* Feature Cards */}
             <AnimateFromInside>
-              <div className="flex flex-col md:flex-row items-start gap-6 mt-2">
-                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
-                  <img
-                    src={autopiloticon}
-                    alt={autopiloticon}
-                    className="object-cover"
-                  />
-                  <span className="font-medium text-[20px] leading-[25px]">
-                    Trade On <br /> Autopilot
-                  </span>
+              <div className="w-full mt-2">
+                {/* Mobile and Small Screens: 2x2 Grid */}
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:hidden">
+                  <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33]">
+                    <img
+                      src={autopiloticon}
+                      alt={autopiloticon}
+                      className="object-cover w-[35px] h-[35px]"
+                    />
+                    <span className="font-medium text-[14px] sm:text-[16px] leading-[18px] sm:leading-[20px]">
+                      Trade On <br /> Autopilot
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33]">
+                    <img
+                      src={autuomatictradingicon}
+                      alt={autuomatictradingicon}
+                      className="object-cover w-[35px] h-[35px]"
+                    />
+                    <span className="font-medium text-[14px] sm:text-[16px] leading-[18px] sm:leading-[20px]">
+                      Fully Automatic <br /> Trading
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33]">
+                    <img
+                      src={begineerfriendly}
+                      alt={begineerfriendly}
+                      className="object-cover w-[35px] h-[35px]"
+                    />
+                    <span className="font-medium text-[14px] sm:text-[16px] leading-[18px] sm:leading-[20px]">
+                      Beginner <br />
+                      Friendly
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33]">
+                    <img
+                      src={begineerfriendly}
+                      alt={begineerfriendly}
+                      className="object-cover w-[35px] h-[35px]"
+                    />
+                    <span className="font-medium text-[14px] sm:text-[16px] leading-[18px] sm:leading-[20px]">
+                      Beginner <br />
+                      Friendly
+                    </span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
-                  <img
-                    src={autuomatictradingicon}
-                    alt={autuomatictradingicon}
-                    className="object-cover"
-                  />
-                  <span className="font-medium text-[20px] leading-[25px]">
-                    Fully Automatic <br /> Trading
-                  </span>
-                </div>
-                <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
-                  <img
-                    src={begineerfriendly}
-                    alt={begineerfriendly}
-                    className="object-cover"
-                  />
-                  <span className="font-medium text-[20px] leading-[25px]">
-                    Beginner <br />
-                    Friendly
-                  </span>
+
+                {/* Large Screens: Horizontal Row */}
+                <div className="hidden lg:flex items-start gap-6 mt-2">
+                  <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
+                    <img
+                      src={autopiloticon}
+                      alt={autopiloticon}
+                      className="object-cover w-12 h-12"
+                    />
+                    <span className="font-medium text-[20px] leading-[25px]">
+                      Trade On <br /> Autopilot
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
+                    <img
+                      src={autuomatictradingicon}
+                      alt={autuomatictradingicon}
+                      className="object-cover w-12 h-12"
+                    />
+                    <span className="font-medium text-[20px] leading-[25px]">
+                      Fully Automatic <br /> Trading
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 rounded-[8px] p-2 border-[1.3px] border-[#FFFFFF33] w-[230px]">
+                    <img
+                      src={begineerfriendly}
+                      alt={begineerfriendly}
+                      className="object-cover w-12 h-12"
+                    />
+                    <span className="font-medium text-[20px] leading-[25px]">
+                      Beginner <br />
+                      Friendly
+                    </span>
+                  </div>
                 </div>
               </div>
             </AnimateFromInside>
             <AnimateFromInside>
-              <CTAButton />
+              <div className="md:block hidden">
+                <CTAButton />
+              </div>
             </AnimateFromInside>
           </div>
+          <AnimateFromInside>
+            <div className="md:hidden block">
+              <CTAButton />
+            </div>
+          </AnimateFromInside>
 
           {/* Right Side - Video Image */}
-          <div className="flex-1 flex justify-center lg:justify-end">
+          <div className="flex-1 flex justify-center lg:justify-end w-full md:mt-6 mt-[55px]">
             <AnimateFromInside>
-              <div className="relative -right-36 w-full">
+              <div className="relative w-full max-w-[400px] lg:max-w-none -right-12 lg:-right-36 lg:w-full">
                 <img
                   src={video}
                   alt="Video preview"
-                  className="object-cover scale-125 transform"
+                  className="object-cover w-full h-auto scale-125 transform"
                 />
               </div>
             </AnimateFromInside>
