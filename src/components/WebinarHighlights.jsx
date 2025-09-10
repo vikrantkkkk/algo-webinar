@@ -30,7 +30,7 @@ const WebinarHighlights = () => {
       <div className="w-full flex flex-col gap-6 md:mt-6 mt-4">
         <AnimateFromInside>
           <div className="w-full flex justify-center">
-            <div className="bg-[#000E2E] w-full h-auto p-6 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
+            <div className="bg-[#000E2E] w-full h-auto p-4 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
               <div className="flex flex-col justify-between h-full gap-4">
                 <div className="flex flex-col md:gap-6 gap-4">
                   <img
@@ -62,7 +62,7 @@ const WebinarHighlights = () => {
         </AnimateFromInside>
         <AnimateFromInside>
           <div className="w-full flex justify-center">
-            <div className="bg-[#001B26] w-full h-auto p-6 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
+            <div className="bg-[#001B26] w-full h-auto p-4 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
               <div className="flex flex-col justify-between h-full gap-4">
                 <div className="flex flex-col md:gap-6 gap-4">
                   <img
@@ -122,7 +122,7 @@ const WebinarHighlights = () => {
         </AnimateFromInside>
         <AnimateFromInside>
           <div className="w-full flex justify-center">
-            <div className="bg-[#002419] w-full  h-auto p-6 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
+            <div className="bg-[#002419] w-full  h-auto p-4 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
               <div className="flex flex-col justify-between h-full gap-4">
                 <div className="flex flex-col md:gap-6 gap-4">
                   <img src={plicon} alt={plicon} className="w-[52px]" />
