@@ -7,16 +7,16 @@ import { AnimateFromInside } from "../common/ScrollFadeIn";
 
 const Certified = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-10 bg-[#010611] w-full h-auto md:pt-28 pt-20 pb-8 md:px-40 px-4">
+    <div className="flex flex-col md:flex-row items-center justify-center md:justify-between md:gap-6 gap-4 bg-[#010611] w-full h-auto md:pt-28 pt-20 pb-8 md:px-40 px-4">
       {/* Left Section */}
-      <div className="flex flex-col md:flex-1 w-full gap-8 justify-start items-start">
+      <div className="flex flex-col md:flex-1 w-full md:gap-8 gap-6 justify-start items-start">
         <AnimateFromInside>
-          <h2 className="font-semibold text-white md:text-[56px] text-[34px] leading-[74px] font-degular">
+          <h2 className="font-semibold text-white md:text-[56px] text-[34px] md:leading-[74px] leading-[100%] font-degular">
             <span className="text-[#FFFFFF99] font-normal">Get </span>
             Certified
           </h2>
         </AnimateFromInside>
-        <div className="flex flex-col items-start gap-6">
+        <div className="flex flex-col items-start md:gap-6 gap-4">
           <div className="flex justify-center items-center gap-4">
             <img src={king} alt="king" className="object-cover" />
             <p className="font-medium md:text-[20px] text-[16px] leading-[30px] text-white">
