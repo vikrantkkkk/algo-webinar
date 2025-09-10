@@ -126,7 +126,7 @@ const Header = () => {
             </button>
             <motion.button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="relative w-8 h-8"
+              className="relative w-8 h-8 hidden"
               aria-label="Toggle mobile menu"
               initial={false}
               animate={mobileMenuOpen ? "open" : "closed"}
