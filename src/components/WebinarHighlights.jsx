@@ -5,9 +5,10 @@ import elitetradeicon from "../assets/svg/elitetradeicon.svg";
 import timeicon from "../assets/svg/timeicon.svg";
 import plicon from "../assets/svg/plicon.svg";
 import CTAButton from "../common/CTAButton";
-import newcardicon1 from "../assets/webp/newcardicon1.webp";
-import newcardicon2 from "../assets/webp/newcardicon2.webp";
 import hand from "../assets/webp/hand.webp";
+import ai from "../assets/webp/ai.webp";
+import deploy from "../assets/webp/deploy.webp";
+import verifiedpl from "../assets/webp/verifiedpl.webp";
 
 const WebinarHighlights = () => {
   return (
@@ -37,22 +38,17 @@ const WebinarHighlights = () => {
                     alt={algocardicon}
                     className="w-[52px]"
                   />
-                  <p className="font-semibold text-[22px] md:text-[32px] leading-[28px] md:leading-[44px] font-degular">
+                  <p className="font-semibold text-[22px] md:text-[48px] leading-[28px] md:leading-[54px] font-degular">
                     <span className="text-[#FFFFFF99] font-normal">
-                      Everything You Need To
+                      Everything About &nbsp;
                     </span>
                     <br className="block md:hidden" />
-                    Learn About AI & Algo Trading
+                    AI & <br className="hidden md:block" /> Algo Trading
                   </p>
-                  Everything About
-                  <p className="font-medium text-[12px] md:text-[18px] md:leading-[28px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
-                    The world of trading is moving fast – extremely fast, and in
-                    this era of algo trading and artificial intelligence, we
-                    will give you a sneak peek into how this new form of trading
-                    can significantly increase the odds of being profitable in
-                    the market. You'll learn how big professional trading desks
-                    are hunting retail stop losses, exploiting big market
-                    movements – all on autopilot.
+                  <p className="font-medium text-[12px] md:text-[24px] md:leading-[36px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[600px]">
+                    Discover how institutional traders use AI and algorithms to
+                    boost profits. Learn how markets move, stop losses get
+                    hunted, and big opportunities unfold — all on autopilot.
                   </p>
                 </div>
               </div>
@@ -74,29 +70,23 @@ const WebinarHighlights = () => {
                     alt={elitetradeicon}
                     className="w-[52px]"
                   />
-                  <p className="font-semibold text-[22px] md:text-[32px] leading-[28px] md:leading-[44px] font-degular">
+                  <p className="font-semibold text-[22px] md:text-[48px] leading-[28px] md:leading-[54px] font-degular">
                     <span className="text-[#FFFFFF99] font-normal">
-                      How Tools Like Chat GPT, Trading View & StrykeX{" "}
-                      <br className="hidden md:block" /> Can Get You To The{" "}
+                      Tools That Put You in the <br />
                       {"  "}
                     </span>
-                    Top 1% Elite Traders
+                    Top 1%{" "}
                   </p>
-                  <p className="font-medium text-[12px] md:text-[18px] md:leading-[28px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
-                    Gone are the days where traders were glued to their screen
-                    from 9:15 am till 3:30pm – scanning, executing, managing
-                    their trades manually. This is ineffective and a perfect
-                    recipe for increasing losses. BUT, with A.I trading tools
-                    and platforms such as Trading View & StrykeX combined with
-                    Chat GPT, you can do all this on complete automation with 5X
-                    better results, without even clicking a button or writing a
-                    single line of code. That's the power of artificial
-                    intelligence – that's the future of retail trading.
+                  <p className="font-medium text-[12px] md:text-[24px] md:leading-[36px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[600px]">
+                    Forget staring at screens all day. With AI tools like
+                    TradingView, StrykeX, and ChatGPT, you can trade smarter,
+                    faster, and fully automated — no coding, no clicking, 5X
+                    better results.
                   </p>
                 </div>
               </div>
               <img
-                src={newcardicon1}
+                src={ai}
                 alt="StrykeX Capital"
                 className="w-full max-w-[550px] md:w-[550px] object-cover"
               />
@@ -105,31 +95,25 @@ const WebinarHighlights = () => {
         </AnimateFromInside>
         <AnimateFromInside>
           <div className="w-full flex justify-center">
-            <div className="bg-[#002323] w-full h-auto p-6 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
+            <div className="bg-[#002323] w-full h-auto p-4 md:p-8 rounded-[20px] flex flex-col md:flex-row justify-between items-center md:gap-8 gap-4">
               <div className="flex flex-col justify-between h-full gap-4">
                 <div className="flex flex-col md:gap-6 gap-4">
                   <img src={timeicon} alt={timeicon} className="w-[52px]" />
-                  <p className="font-semibold text-[22px] md:text-[32px] leading-[28px] md:leading-[44px] font-degular">
+                  <p className="font-semibold text-[22px] md:text-[48px] leading-[28px] md:leading-[54px] font-degular">
+                    Create, Backtest & Deploy <br />
                     <span className="text-[#FFFFFF99] font-normal">
-                      Learn To Create, Back Test and Deploy <br className="hidden md:block" /> Trading Bots
-                      Using
+                      Trading Bots
                     </span>{" "}
-                    Our Secret Strategies
                   </p>
-                  <p className="font-medium text-[12px] md:text-[18px] md:leading-[28px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
-                    Unleash the power of algorithmic trading tools which lets
-                    you create, test, deploy your strategies spanning across
-                    price action, smart money concepts, institutional price
-                    action, indicators, volume, open interest and much more in a
-                    few clicks without the need of any coding or programming
-                    skills. Additionally, you will get access to few of our
-                    secret algo strategies – which are ready to deploy in the
-                    live markets.
+                  <p className="font-medium text-[12px] md:text-[24px] md:leading-[36px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[600px]">
+                    Build and test your own strategies in minutes — from price
+                    action to smart money concepts — with zero coding skills.
+                    Plus, get access to our ready-to-deploy secret strategies.
                   </p>
                 </div>
               </div>
               <img
-                src={newcardicon1}
+                src={deploy}
                 alt="StrykeX Funding"
                 className="w-full max-w-[550px] md:w-[550px] object-cover"
               />
@@ -142,26 +126,23 @@ const WebinarHighlights = () => {
               <div className="flex flex-col justify-between h-full gap-4">
                 <div className="flex flex-col md:gap-6 gap-4">
                   <img src={plicon} alt={plicon} className="w-[52px]" />
-                  <p className="font-semibold text-[22px] md:text-[36px] leading-[28px] md:leading-[52px] font-degular">
-                    Detailed Verified Profit / Loss Statement <br className="block md:hidden" />
+                  <p className="font-semibold text-[22px] md:text-[48px] leading-[28px] md:leading-[54px] font-degular">
+                    Verified Profits &
+                    <br />
                     <span className="text-[#FFFFFF99] font-normal">
-                      & Algo Trade History
+                      Trade History
                     </span>
                   </p>
-                  <p className="font-medium text-[12px] md:text-[18px] md:leading-[28px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[800px]">
-                    - Get access to detailed case studies of verified real
-                    trades executed on autopilot from our proprietary custom
-                    algo trading robots which seamlessly scan, analyse, deploy
-                    and manage trades in equity, futures and options segment for
-                    intraday as well as swing trading styles. Discover a wide
-                    variety of directional and non-directional trading
-                    strategies, which will make you top dollar even when you
-                    sleep.
+
+                  <p className="font-medium text-[12px] md:text-[24px] md:leading-[36px] leading-[18px] tracking-normal text-[#FFFFFFBF] max-w-[600px]">
+                    See real, verified profit/loss statements and algo trade
+                    records. Proof of performance, transparency, and results you
+                    can trust.
                   </p>
                 </div>
               </div>
               <img
-                src={newcardicon2}
+                src={verifiedpl}
                 alt="StrykeX Funding"
                 className="w-full max-w-[550px] md:w-[550px] object-cover"
               />
