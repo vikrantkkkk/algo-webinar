@@ -7,7 +7,7 @@ import { AnimateFromInside } from "../common/ScrollFadeIn";
 
 const Certified = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-10 bg-[#010611] w-full h-auto pt-28 pb-8 md:px-40 px-4">
+    <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-10 bg-[#010611] w-full h-auto md:pt-28 pt-20 pb-8 md:px-40 px-4">
       {/* Left Section */}
       <div className="flex flex-col md:flex-1 w-full gap-8 justify-start items-start">
         <AnimateFromInside>
