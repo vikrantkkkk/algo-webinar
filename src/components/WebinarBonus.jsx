@@ -33,19 +33,76 @@ const WebinarBonus = () => {
     },
   ];
 
-  const BonusCard = ({ bonus }) => (
+  // Mobile Card Component - Horizontal Layout
+  const MobileBonusCard = ({ bonus }) => (
     <div
-      className="rounded-[16px] px-4 py-8 md:px-8 md:py-12 flex-1"
+      className="rounded-[16px] p-4 flex-1 relative mt-6"
       style={{
         background: `linear-gradient(206.92deg, rgba(0, 0, 0, 0.2) 16.84%, rgba(15, 208, 234, 0.2) 93.26%), linear-gradient(132.92deg, rgba(0, 0, 0, 0) 25.91%, rgba(0, 68, 255, 0.2) 94.34%)`,
       }}
     >
-      {/* Content Container */}
-      <div className="flex flex-col gap-3 md:gap-4 h-full">
+      {/* Bonus Badge - Absolute positioned at top-left */}
+      <div
+        className="absolute left-0 -top-4 inline-flex items-center text-white px-3 py-1 rounded-full text-[12px] font-semibold"
+        style={{
+          background: `linear-gradient(96.9deg, #3FADFF 2.48%, #336CDC 49.16%, #47B4B4 96.8%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))`,
+        }}
+      >
+        {bonus.badgeText}
+      </div>
+
+      {/* Content Container - Icon and Title in Row */}
+      <div className="flex flex-col gap-3 h-full pt-6">
+        {/* Icon and Title Row */}
+        <div className="flex gap-3 items-center justify-start">
+          {/* Icon */}
+          <div className="flex-shrink-0">
+            <img src={bonus.icon} alt={bonus.badgeText} className="w-10 h-10" />
+          </div>
+
+          {/* Title */}
+          <div className="flex-1">
+            <h3
+              className="text-white text-[18px] leading-[24px] font-bold text-left"
+              dangerouslySetInnerHTML={{ __html: bonus.title }}
+            ></h3>
+          </div>
+        </div>
+
+        {/* Hint */}
+        <p className="text-[#A1B5D0] font-normal w-[90%] text-[14px] leading-[18px] text-left flex-grow">
+          {bonus.hint}
+        </p>
+
+         {/* Value */}
+         <div className="text-center">
+           <p
+             className="text-white text-[20px] leading-[20px] font-semibold"
+             style={{
+               textShadow: "0px 4px 47.4px #FFFFFF",
+             }}
+           >
+             {bonus.value}
+           </p>
+         </div>
+      </div>
+    </div>
+  );
+
+  // Desktop Card Component - Vertical Layout
+  const DesktopBonusCard = ({ bonus }) => (
+    <div
+      className="rounded-[16px] px-8 py-12 flex-1"
+      style={{
+        background: `linear-gradient(206.92deg, rgba(0, 0, 0, 0.2) 16.84%, rgba(15, 208, 234, 0.2) 93.26%), linear-gradient(132.92deg, rgba(0, 0, 0, 0) 25.91%, rgba(0, 68, 255, 0.2) 94.34%)`,
+      }}
+    >
+      {/* Content Container - Vertical Layout */}
+      <div className="flex flex-col gap-4 h-full">
         {/* Badge */}
         <div className="flex justify-center">
           <div
-            className="inline-flex items-center text-white px-4 py-2 md:px-8 md:py-3 rounded-full text-[14px] md:text-[18px] font-semibold"
+            className="inline-flex items-center text-white px-8 py-3 rounded-full text-[18px] font-semibold"
             style={{
               background: `linear-gradient(96.9deg, #3FADFF 2.48%, #336CDC 49.16%, #47B4B4 96.8%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))`,
             }}
@@ -56,24 +113,24 @@ const WebinarBonus = () => {
 
         {/* Icon */}
         <div className="flex justify-center">
-          <img src={bonus.icon} alt={bonus.badgeText} className="w-10 h-10 md:w-12 md:h-12" />
+          <img src={bonus.icon} alt={bonus.badgeText} className="w-12 h-12" />
         </div>
 
         {/* Title */}
         <h3
-          className="text-white text-[18px] md:text-[24px] font-bold text-center leading-tight"
+          className="text-white text-[24px] font-bold text-center leading-tight"
           dangerouslySetInnerHTML={{ __html: bonus.title }}
         ></h3>
 
         {/* Hint */}
-        <p className="text-[#A1B5D0] text-[12px] md:text-[16px] leading-[18px] md:leading-relaxed text-center flex-grow">
+        <p className="text-[#A1B5D0] text-[16px] leading-relaxed text-center flex-grow">
           {bonus.hint}
         </p>
 
         {/* Value */}
         <div className="text-center">
           <p
-            className="text-white text-[24px] md:text-[32px] leading-[24px] md:leading-[32px] font-semibold"
+            className="text-white text-[24px] leading-[22px] font-semibold"
             style={{
               textShadow: "0px 4px 47.4px #FFFFFF",
             }}
@@ -109,7 +166,7 @@ const WebinarBonus = () => {
           <AnimateFromInside>
             <div className="flex gap-6 md:gap-8">
               {bonuses.map((bonus) => (
-                <BonusCard key={bonus.id} bonus={bonus} />
+                <DesktopBonusCard key={bonus.id} bonus={bonus} />
               ))}
             </div>
           </AnimateFromInside>
@@ -118,9 +175,9 @@ const WebinarBonus = () => {
         {/* Mobile Layout - Single column */}
         <div className="md:hidden flex flex-col gap-6">
           <AnimateFromInside>
-            <div className="flex flex-col gap-[35px]">
+            <div className="flex flex-col gap-6">
               {bonuses.map((bonus) => (
-                <BonusCard key={bonus.id} bonus={bonus} />
+                <MobileBonusCard key={bonus.id} bonus={bonus} />
               ))}
             </div>
           </AnimateFromInside>
