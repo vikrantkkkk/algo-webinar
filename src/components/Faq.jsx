@@ -58,7 +58,7 @@ const Faq = () => {
               <motion.div
                 onClick={() => toggleFAQ(index)}
                 key={item.id}
-                className={`w-full cursor-pointer md:max-w-[750px] rounded-[16px] p-6 bg-[#FFFFFF1F] text-white h-auto flex ${
+                className={`w-full cursor-pointer md:max-w-[750px] rounded-[16px] md:p-6 p-4 bg-[#FFFFFF1F] text-white h-auto flex ${
                   activeIndex === index ? "items-start" : "items-center"
                 }`}
                 initial={false}
