@@ -20,7 +20,7 @@ const Coach = () => {
   ];
 
   return (
-    <div className="flex flex-col items-start justify-center gap-10 bg-[#010611] h-auto pt-28 pb-8 md:px-40 px-4 w-full min-w-[1270px]">
+    <div className="flex flex-col items-start justify-center gap-10 bg-[#010611] h-auto md:pt-28 pt-20 pb-8 md:px-40 px-4 w-full min-w-[1270px]">
       {/* Heading */}
       <AnimateFromInside>
         <h2 className="font-semibold text-white md:text-[56px] text-[34px] leading-[74px] font-degular">
