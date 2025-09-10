@@ -98,10 +98,10 @@ const SuperTraders = () => {
   const continuousReviews = [...reviews, ...reviews, ...reviews, ...reviews];
 
   return (
-    <div className="flex flex-col items-center justify-center gap-10 bg-[#010611] w-full h-auto md:pt-28 pt-20 pb-8 relative overflow-hidden">
+    <div className="flex flex-col items-center justify-center gap-6  bg-[#010611] w-full h-auto md:pt-28 pt-20 md:pb-8 relative overflow-hidden">
       <div className="flex justify-start w-full md:px-40 px-4">
         <AnimateFromInside>
-          <h2 className="font-semibold text-white md:text-[56px] text-[34px] leading-[74px] font-degular">
+          <h2 className="font-semibold text-white md:text-[56px] text-[32px] md:leading-[74px] leading-[36px] font-degular">
             <span className="text-[#FFFFFF99] font-normal">
               Hear It From Our <br />
             </span>
